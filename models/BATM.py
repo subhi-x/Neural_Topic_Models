@@ -132,4 +132,8 @@ class BATM:
                     topic_words.append([self.id2token[idx] for idx in indices[i]])
             else:
                 topic_words.append([self.id2token[idx] for idx in indices[topic_id]])
+            
+            with open(r'output.txt','w') as fp:
+                for item in topic_words:
+                    fp.write("%s\n" % item)
             return topic_words
