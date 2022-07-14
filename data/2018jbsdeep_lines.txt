@@ -1,0 +1,334 @@
+Table 1 presents these biomedical ontologies with the
+number of different classes and names (labels and syn-
+onyms) that each one had at the time of the download.In this paper, we present a set of new algorithms
+which are able to create ternary compound alignments for
+large biomedical ontologies.matches between class or prop-
+erty expressions involving more than two ontologies.BioPortal1, a por-
+tal for life sciences’ ontologies, lists over 400 ontologies
+dedicated to diverse domains ranging from molecules to
+phenotypes.Keywords: Biomedical ontologies, Ontology alignment, Algorithms
+Background
+Life sciences research is becoming increasingly integra-
+tive, with research areas such as Systems Biology and
+Translational Medicine bridging distinct domains to pro-
+vide novel insights.
+This is likely due the difficulty and cost of cre-
+ating and sharing such a corpus.MN and MID annotated the corpus,
+analyzed the data, and edited the manuscript.This is due
+to the UMLS representation of SNOMED CT having
+over 320K distinct CUIs and we allow an unbounded
+number of CUIs per mention.We make our corpus freely available.because agreement due to
+chance is expected to be extremely small.
+To better support ontology reuse and community-
+based ontology development, it would also be valuable
+to have the authors of the source ontology know of the
+reuse of a term in their ontology.Tools are critical to make
+more efficient extensible ontology development.4 A general ontology development pipeline using XOD principles.Many VO-specific terms were added to VO by seman-
+tically alignment with the upper BFO ontology or middle
+level ontologies (e.g., OBI) (XOD 2).Being “eXtensible”, XOD contains four
+key principles that are extensible at different levels of
+ontology development (Fig.
+We show
+that accounting for all lexical annotations (e.g., labels and synonyms) in biomedical ontologies leads to a substantial
+improvement in F-measure over using only the primary name, and that accounting for the reliability of different typesJournal of Biomedical Semantics  (2018) 9:4 
+DOI 10.1186/s13326-017-0170-9
+RESEARCH Open Access
+Tackling the challenges of matching
+biomedical ontologies
+Daniel Faria1* , Catia Pesquita2, Isabela Mott2, Catarina Martins3, Francisco M. Couto2 and Isabel F. Cruz4
+Abstract
+Background: Biomedical ontologies pose several challenges to ontology matching due both to the complexity of
+the biomedical domain and to the characteristics of the ontologies themselves.Results: We demonstrate that the linear complexity of the hash-based searching strategy implemented by most
+state-of-the-art ontology matching systems is essential for matching large biomedical ontologies efficiently.In this study, we dissect the strategies employed by
+matching systems to tackle the challenges of matching biomedical ontologies and gauge the impact of the challenges
+themselves on matching performance, using the AgreementMakerLight (AML) system as the platform for this study.The biomedical tracks in the Ontology
+Matching Evaluation Initiative (OAEI) have spurred the development of matching systems able to tackle these
+challenges, and benchmarked their general performance.
+This information
+Senderov et al.Here, Blomquist (1948) is
+Senderov et al.Senderov et al.A graphical representation of the relationships between instances of the publishing-related classes that
+OpenBiodiv introduces
+Senderov et al.For example, the Open
+Biomedical Ontologies’ (OBO) Population and Commu-
+nity Ontology (PCO) [63] has a class “collection of organ-
+isms” (http://purl.obolibrary.org/obo/PCO_0000000) that
+can be considered a superclass of DwC Taxon.
+The MIRO guidelines and the
+analysis we presented should help to improve awareness
+regarding such information items and their importance
+to users.We found that this area
+is frequently absent in high-end ODR; the three items
+with the lowest compliance all fall under this category.The method we have used to develop the MIRO
+guidelines give confidence that they are well supported.Table 1 shows the descriptive statistics of all 30 original
+information items, sorted by standard deviation.We will report this difference in what follows by the dif-
+ference in rank compared to the overall rank, mentioning
+only those items that deviate by at least 4 positions in the
+ranking.
+Journal of Biomedical Semantics  (2018) 9:7 Page 8 of 11
+Charniak-Lease Parser based tokenization, part of speech
+tagging and dependency parse in a standardized XML
+format.That is, for any relation (C,D) in a document (where C,D
+denotes a chemical and disease identifier respectively), we
+search for any single sentence that bears mentions to both
+the relevant entities C,D.We present a
+comparative study of kernel methods for the CID task and also extend our study to the Protein-Protein Interaction (PPI)
+extraction task, an important biomedical relation extraction task.Graphs 51.6 80.8 63.0 38.8 36.0 37.3 49.0 67.4 56.8
+Hybrid (Prior art [21]) - - - - - - 64.9 49.2 56.0
+Hybrid+Rules (Prior art [21]) - - - - - - 55.6 68.4 61.3
+(Key: P,R,F denotes Precision, Recall and F1 score respectively.CID relation extraction
+This experiment follows the Chemical-Induced Disease
+Relation Extraction subtask of [3].
+It affects many individuals, and represents a
+global health burden with a financial impact on national
+healthcare systems [2].The most important component of any CDSS is its knowledge base.Keywords: Clinical decision support system, Treatment plan, Ontology, Knowledge modeling, Diabetes mellitus
+Background
+Diabetes is a complex and potentially debilitating chronic
+disease [1].Individualized choices of medica-
+tions for patients are a challenge, because the number
+* Correspondence: shaker_elsapagh@yahoo.com; kskwak@inha.ac.kr
+1Information Systems Department, Faculty of Computers and Informatics,
+Benha University, Banha Mansura Road, Meit Ghamr - Benha, Banha, Al
+Qalyubia Governorate 3000-104, Egypt
+3Department of Information and Communication Engineering, Inha
+University, 100 Inharo, Nam-gu, Incheon 22212, South Korea
+Full list of author information is available at the end of the article
+© The Author(s).DMTO is implemented under Protégé 5.0 in Web Ontology Language (OWL) 2 format and is publicly
+available through the National Center for Biomedical Ontology’s BioPortal at http://bioportal.bioontology.org/ontologies/
+DMTO.
+[29] use graph representation of ontologies to pro-
+pose a segmentation algorithm based on subgraph extrac-
+tion procedure.Given our knowledge of the participating
+Fig.To study the underlying
+*Correspondence: giovanna.guerrini@unige.it
+5University of Genoa, Genoa, Italy
+Full list of author information is available at the end of the article
+causation mechanism of a certain disease, life science
+researchers rely on various sources, such as (i) current
+knowledge (e.g.Indeed, to facilitate knowledge sharing and increase
+understanding of the method in use, it is common to
+employ already existing ontologies that are well agreed
+on in the biomedical community (e.g., Gene Ontology
+[20]).n.
+(ii) Nesting (one level) with the same object property:
+‘A SubClassOf: R restriction (R restriction B)’,
+being R transitive.
+Journal of Biomedical Semantics  (2018) 9:10 Page 2 of 10
+expressiveness of the GO and of imported ontologies is
+almost entirely within the OWL 2 EL profile (the only
+exception is a handful of inverse property assertions), so
+while some incompleteness in query answering is
+possible, we don’t expect it to be common.This allowed easy
+manual review and editing by RCV curators at Roche
+who used the linked tickets to discuss mapping issues
+and record the approval status of all mappings.For this reason, many en-
+richment analyses rely on a more limited number of
+gene sets, corresponding to grouping under a limited
+number of high or intermediate level GO terms
+commonly referred to as a slim.X axis = number of auto-only mappings.2, with cell-types
+(X-axis) clustered according to similarity of enrichment
+profile across gene sets.
+Third, the positive relation-based context can be
+used to discover structural mappings.At each iteration,
+anchor a having the least negative evidence set, i.e., the
+smallest conflict degree, is selected.FCA-Map is
+one of the three winners of the Disease and Phenotype
+Zhao et al.Formal contexts are often illustrated in
+binary tables, as exemplified by Table 1, where rows cor-
+respond to objects, columns to attributes, and a cell is
+marked with “×” if the object in its row has the attribute
+in its column.Specifically, we exploit the
+taxonomic, partonomic and disjoint relationships which
+are common in biomedical ontologies.
+This encompasses
+NLP applied to texts in Electronic Health Records (EHRs),
+but also extends to the development of resources for
+clinical NLP systems, and to clinically relevant research
+addressing biomedical information retrieval or the analy-
+sis of patient-authored text for public health or diagnostic
+purposes.There have been a number of success stories in
+various biomedical NLP applications in English [8–19].The Creative Commons Public Domain Dedication waiver
+(http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.Journal of Biomedical Semantics  (2018) 9:12 Page 2 of 13
+exploitation of clinical data from multiple healthcare cen-
+ters could contribute to make headway in the understand-
+ing of autism spectrum disorders [21].Each patient contributed their EHR and genomics data
+to enable phenotype/genotype studies.
+more than one UniProtKB AC is assigned to the
+gene/protein term manually annotated.The target terms for this experiment are
+only gene/protein terms manually annotated with
+vector representations.Both categories “Only protein name” and “Terms from
+protein name” are applied only to the target terms and
+take into account the protein name as it appears in the
+UniProtKB, which is the lexical content from protein
+class labels (i.e.the gene symbol does not
+appear among the terms manually annotated for the
+protein/gene of interest).Data resources
+Creation of a small-annotated corpus of gene/protein
+names from 25 PubMed articles
+The sysVASC project performed a systematic literature
+review that involved a PubMed query with the text: “cor-
+onary heart disease AND (proteomics OR proteome OR
+transcriptomics OR transcriptome OR metabolomics OR
+metabolome OR omics)” [Julie Klein 2016, personal
+communication, 07 June].
+For
+its development, we performed the following steps: 1)
+we created the schema and main content of GGDonto;
+2) organized the GDGDB information, RDFized it, and
+integrated it into GGDonto; 3) added information about
+other genetic diseases and disorders sharing a similar
+etiology; 4) created a classification scheme for the
+diseases recorded in GGDonto; and 5) enriched the
+content of this ontology by linking it to other biomedical
+resources and integrating the information into GGDonto.As the metabolism of glycans is very complicated, for
+the development of a knowledge-base of genetic diseases
+and disorders caused by defects in this metabolism, it
+was necessary to describe these impairments in detail in
+the context of metabolic pathways.In the last decade, several disorders of N-linked protein
+glycosylation, O-linked protein glycosylation, and glyco-
+lipid and glycosaminoglycan biosynthesis have been newly
+described, and this process of discovery is just beginning
+[11, 13–17].As it is described in the SKOS
+Primer, the SKOS mapping properties helped us to indicate
+that two concepts from different schemes have comparable
+meanings, and to specify these meanings.Inherited
+mutations in glyco-related genes can affect the biosynthesis
+of glycans as well as their degradation, and this impaired
+metabolism can result in severe genetic diseases and
+disorders, such as congenital disorders of glycosylation
+(CDG) and lysosomal storage diseases (LSD).
+Journal of Biomedical Semantics  (2018) 9:15 Page 2 of 9
+Background
+Concomitant use of prescription drugs and natural prod-
+ucts, including vitamin, mineral, or herbal supplements,
+is a frequent occurrence.To provide evidence-based information regarding pur-
+ported PK-NPDIs, a new Center of Excellence for PK-
+NPDI Research was established by the United States
+National Center for Complementary and Integrative
+Health (grant number U54 AT008909).Searching the NCBO
+Bioportal [1] retrieves the Natural Product Ontology
+(NATPRO) [2], which we consider a potentially relevant
+resource for our project.Judkins et al.Journal of Biomedical Semantics  (2018) 9:15 
+https://doi.org/10.1186/s13326-018-0183-z
+RESEARCH Open Access
+Extending the DIDEO ontology to include
+entities from the natural product drug
+interaction domain of discourse
+John Judkins1, Jessica Tay-Sontheimer2, Richard D. Boyce3 and Mathias Brochhausen1*
+Abstract
+Background: Prompted by the frequency of concomitant use of prescription drugs with natural products, and the
+lack of knowledge regarding the impact of pharmacokinetic-based natural product-drug interactions (PK-NPDIs), the
+United States National Center for Complementary and Integrative Health has established a center of excellence for
+PK-NPDI.
+In previous work [4], we
+showed, that such a transfer is possible: A set of pathol-
+ogy reports has been automatically transformed into
+archetype-based Pathology Electronic Health Records
+(PEHRs).“Search
+Ontology-based Pathology Questions (OWL)” section)
+Q Question
+Q0a PEHRs which contains T2 as primary tumor classification
+and defined phrases of excised skinmaterial
+Q1 Prostatic carcinomas are found starting from how many
+grams of flake tissue?“Search Ontology-based Pathology Questions
+(OWL)” section),
+• as well as the binary of the XPath generation tool (?There is a need for an
+ontology-based way for the generation of XPath expres-
+sions.On the top level of the
+ontology the class XML_Structure was added, which
+subclass structure represents the XML structure.
+In this study, we aimed to develop an ontology-based literature mining system to identify
+ADRs from drug labels and to elucidate potential mechanisms of the neuropathy-inducing drugs (NIDs).Our study demonstrates the
+feasibility of using ontology-based literature mining,
+network analysis, and drug class effect classification to
+efficiently identify and study specific drugs and their
+associated ADRs.A network of ADR-ADR based on the ADRs reported to have been caused
+by NIDs was constructed.Our study demonstrates the important role of the
+MedDRA controlled terminology and ontologies (e.g.,
+ChEBI, OAE, and ODNAE) in the literature mining
+Table 1 Identified ADRs from 53 NIDs drug labels
+Color highlight was used to visualize difference among the number of ADRs
+across NIDs
+Hur et al.NID drug labels
+In the present study, we used a collection of
+XML-structured drug labels that are applied for the Text
+Analysis Conference (TAC) Adverse Drug Reaction
+Hur et al.
+By com-
+paring both infectious and non-infectious diseases, we
+hope to discover if language and/or locations features can
+be used to uniquely characterise these categories.Barros et al.Barros et al.Barros et al.Barros et al.
+The
+miVLAD was only an exception because its AUC declined
+by 0.02.VAERS dataset: We downloaded all raw data from
+VAERS for the year 2016 in the comma-separated value
+(CSV) format.As a result, the release of formal reports lags behind
+disease trends.The Neural Network consists of the
+input layer, 10 hidden layers and the output layer.The training dataset consists of
+Fig.
+Infec-
+tious Disease Ontology1 (IDO), Infectious Disease Ontol-
+ogy for Dengue2 (IDODEN), and Disease Ontology3 (DO)
+are adopted as baselines.The Creative Commons Public Domain Dedication waiver
+(http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.Three infectious disease-relevant ontologies, i.e.Finally, we validate the effectiveness and
+robust superiority of our model on four real-world
+ontologies.The experimental results show that the proposed EAPB
+can effectively evaluate ontologies, especially those in the medical informatics field.
+This means a classifier is trained on a set of align-
+ments between ontologies in which correct and incor-
+rect mappings are identified with the goal of using
+the trained classifier to predict whether an assertion
+of semantic equivalence between two terms is or is
+not true.Our proposal is to address
+these limitations through the exploitation of unsuper-
+vised learning approaches for ontology matching drawing
+on the recent rise of distributed neural representations
+(DNRs), in which for example words and sentences are
+embedded in a high-dimensional Euclidean space [13–17]
+in order to provide a means of capturing lexical and
+sentence meaning in an unsupervised manner.Our results provide evidence that the approach produces embeddings that are especially well
+tailored to the ontology matching task, demonstrating a novel pathway for the problem.Here we are interested in features of terms,
+for instance the number of incoming edges when a term
+is represented as the vertex of an ontology graph; or a
+terms’s tf-idf value – which is a statistical measure of
+the frequency of a term’s use in a corpus [9].Our approach is based on embedding ontological terms in a high-dimensional Euclidean space.
+A triple can also contain provenanceThey represent knowledge as subject-predicate-object triples, in
+which the predicate indicates the relationship between subject and object.
+This, compounded with various other
+factors including misinformation about vaccines, has pre-
+sented a problem in vaccine uptake into the population.Even to this day, Andrew Wakefield is still
+propagating the same discredited vaccine claims, and also
+has directed a documentary called “Vaxxed:From Cover-
+Up to Catastrophe” that received a special screening at the
+Cannes Film Festival [9].We aimed to use semantic web and ontological technol-
+ogy to represent the domain scope of vaccine misinforma-
+tion.Keywords: Vaccine, Misinformation, Ontology, Natural language processing, Semantic web, Semantic similarity,
+Microattribution
+Background
+Since their introduction, vaccines have been an impor-
+tant breakthrough that has led to the near-eradication of
+many infectious diseases.Overall, the proliferation of vaccine misinfor-
+mation is accessible to anyone with a mobile device and
+limited time to perform extensive research.
+It also supports any OWL ontology through an
+external transformation service.One of the most impor-
+tant operations supported by the concept map resource is
+translate which returns a mapping between a code from
+a source value set to a code in a target value set, if such a
+mapping exists.Ontoserver addresses the technical complexity
+of terminologies by providing out-of-the-box support for
+SNOMED CT and LOINC, and also implementing an
+OWL to FHIR transformation service.Future work will focus on adding
+post-coordination support to the closure operation, which
+is currently implemented in Ontoserver but does not
+support post-coordination.A terminology server should include a distribution mech-
+anism that facilitates keeping clinical terminologies up to
+date in a straightforward manner.
+The inflammatory aspects of both conditions
+are accompanied by alterations in a broad array of medi-
+ators (see Bevivino and Monteleone [34] and Matin et al.As measured by brain microdialysis in freely
+moving male Sprague–Dawley rats, Mascarucci et al.A semantic
+Rindflesch et al.In the summarized
+graph, “Colitis-PROCESS_OF-Rattus norvegicus” was
+extracted from Varga et al.Nodes and edges can be filtered using relation and semantic group filters
+(bottom-left)
+Rindflesch et al.

@@ -1,0 +1,653 @@
+Egan˜a Aranguren et al.Egan˜a Aranguren et al.Egan˜a Aranguren et al.Egan˜a Aranguren et al.The actions are based on the addition or removal of
+axioms of any complexity to/from entities retrieved by
+the query (OWL classes, properties, or instances).
+Wagholikar et al.Table 3 Summary statistics for the corpora
+Set name Documents Lines Tokens Concepts % of tokens included in concept annotation
+i2b2/VA 349 30,673 260,570 11,967 10.9
+Mayo 160 2,487 40,988 2,076 11.3
+Wagholikar et al.The experiments were carried out using an existing ma-
+chine learning-based tagging system, MedTagger [9], that
+participated in the 2010 i2b2/VA NLP challenge.For the ‘overlap spans’, the F1-scores were 0.82 for
+MCR and 0.89 for i2b2.After removing the incompatibilities, they obtained promis-
+ing performance using the pooled corpora [22].
+Client 1 has two instances of the Tool Module, one where the
+ther where it communicates with repository B through Access B.The Exe-
+cution module along with the ToolLocation module is
+essential to execute and monitor tools in a transparent
+way to the final user (functionality 7 and 8).Karlsson and Trelles Journal of Biomedical Semantics 2013, 4:4 Page 10 of 12
+http://www.jbiomedsem.com/content/4/1/4Format conversions
+MAPI supports plug-ins, which facilitate the interoperation
+of data in multiple formats.Both types of components are applied
+based on the datatype taxonomy (inheritance) without user
+intervention.Future work
+In our opinion, WS for biomedical applications must sup-
+port user authentication, transport encryption, call-by-
+The interaction marked as New to Section?There was
+a considerable difference between the mean and median
+number of published results that were mapped when such
+a mapping was possible (mean: 19, median: 9).Based on in vitro data,
+escitalopram would be expected to have little
+inhibitory effect on in vivo metabolism mediated by
+these cytochromes.These findings are
+consistent with the data from heterologously expressed
+CYP isoforms.This graph was
+imported it into the same RDF store as LinkedSPLs.
+Journal of Biomedical Semantics 2013, 4:6 Page 8 of 17
+http://www.jbiomedsem.com/content/4/1/6To evaluate this approach in practice, we selected
+Alzheimer’s disease as a target domain, since represen-
+tatives at the BioHackathon had already been involved in
+developing AlzPathway [80,81] which collects signaling
+and metabolic pathways relevant to this disease. A namespace for file formats would be useful -
+candidates include the EDAM (EMBRACE Data and
+Methods) ontology [108] and myGrid-Moby Web
+service ontologies [109], which lists several of the
+more popular formats (e.g., GenBank flatfile) and
+could be extended with additional formats over time
+(by the time of this writing, the myGrid-Moby data-
+type ontology has been non-redundantly imported
+into the appropriate portion of the EDAM ontology,
+so this dichotomous choice no longer exists, and
+EDAM should be considered canonical in preference
+to the BioMOBY ontologies).The
+full list of BioHackathon participants, and their respect-
+ive projects, is available [24].and/or the dataset to which it belongs (spot informa-
+tion from a particular microarray study, for example).The approach
+of providing an object-oriented adaptor API on top of
+SPARQL endpoints, which has a similar “look and feel” to
+other OpenBio* project APIs, eases the transition to using
+Semantic data.
+Finally, in the
+Conclusions section, we summarise our contribution and
+propose some directions for future work.This
+is done completely automatically, and with the minimum
+Kontonatsios et al.Text
+mining provides a handle on isolating the relevant data
+from the mountain of biomedical literature.Kontonatsios et al.Such interoperability can simplify the construc-
+tion of new networked and pipelined applications.
+Furthermore, there are too many LFs for us to prepare a full
+dictionary from scratch.Results: We built a Linked Open Data set that links LFs to DBpedia titles by applying key collision methods
+(i.e., fingerprint and n-gram fingerprint) to their literals, which are simple approximate string-matching methods.Second, in the form of DBpedia [10], Wikipedia
+is also used as a hub for the Linked Open Data (LOD)
+cloud [11]; Allie users can access related information
+that would otherwise be difficult to find by following a
+series of links from an abbreviation-LF pair.More precisely, the relationship obtained based on
+simple linear regression analysis is
+log 1 yð Þ ¼ 0:2xþ 0:92;
+where x is the frequency-based bin number of an LF and
+y is the probability of its presence in DBpedia titles.Because the key
+collision methods are known to be much faster than
+other approximate string-matching methods, using them
+is an effective way to build linked data, even for very
+large datasets.
+A notable feature is that Hydra often returns first
+answers in quasi-real time, in minutes or even seconds,
+which facilitates experimentation with different forms of
+queries.The work of the Roundtable on Value and Science-Driven
+Health Care of the US Institute of Medicine, and in par-
+ticular their work on the Learning Healthcare System [6]
+provides evidence of the need for such work.Infinite
+time intervals can be specified by using infinities as their
+ends.Time intervals in our model
+are defined by specifying their ends as instants.However, note that Hydra is in its infancy and
+its performance is expected to improve by several orders
+Riazanov et al.
+The first missing is-a relation in the list has the
+fewest possible repairing actions, and may therefore be
+a good starting point.In Subsection ‘Repairing missing is-a
+relations and mappings’ we try to improve this and find
+more informative repairing actions.For 59 missing
+is-a relations, the domain expert used the missing is-a
+relation itself as the repairing action (i.e., the least infor-
+mative repairing actions).For the wrong is-a relations under repair, the user can
+choose, by clicking, multiple existing asserted is-a rela-
+tions andmappings on the display as repairing actions and
+click the Repair button.Using this algorithm structural repairs
+are generated that include only contributing repairing
+actions, and repairing actions of the form (a, t) or (s, b) for
+missing is-a relation or mapping (a, b) do not introduce
+non-validated equivalence relations (see pref1 and pref3 in
+Subsection ‘Debugging workflow’).
+With the ICD-11 contents loaded in the RDF
+store, we were able to define the standard SPARQL
+queries to access the contents through the 4store built-
+in SPARQL endpoint, and to utilize its SPARQL 1.1
+features for the authoring purpose.Figure 3 shows
+a screenshot of an initial user interface prototype illus-
+trating how the textual definitions are leveraged in our
+proposed collaborative authoring system.Note that the label text is wrapped for the display purpose.UMLS/MSH2008_2008_02_04 C0041321
+Jiang et al.The LexWiki environment
+based on Semantic MediaWiki [10] enables the wider
+community to make both structured and unstructured
+proposals on the definitions of classes and property values,
+suggest new values, and make corrections to the current
+ones.
+To that end, we
+have evaluated the results of the queries from the query
+pool without semantic annotations, that is, the retrieval
+is based on words and not in concepts.f |tk) is the probability of the concept c for
+the facet f given the topic tk , and P(tk|wsj, f ) is estimated
+with the joint probability of resource wsj and the task tk
+distributions for the facet f.
+The final similarity between a faceted query q and a
+web resource wsj is given by the linear combination of the
+probabilities of the facets in the query.As it is shown in this paper, BioUSeR addresses these
+aspects by using both semantic annotations as a nor-
+malization process consisting in the association of for-
+mal knowledge to the available text descriptions, and
+information extraction techniques in order to obtain
+information about the facets from the annotated task
+descriptions.f |tk) · P(tk|wsj, f )
+Pérez et al.Moreover, we have
+manually revised it in order to ensure the quality of the
+final set.
+A trait is defined as any
+measurable or observable characteristic pertaining to an organism or any of its substructures.Impetus for this project came from multiple groups in-
+cluding the Rat Genome Database (RGD; [13]), Mouse
+Genome Informatics (MGI; [14]), and the Animal QTL
+Database (QTLdb; [15]), and it began as a way to
+standardize descriptions and definitions of quantitative
+trait loci (QTL) for cross-species comparisons and other
+analyses.A trait can be defined as any measur-
+able or observable characteristic pertaining to an organ-
+ism or any of its substructures.Keywords: Quantitative trait loci, Gene association, Trait ontology* Correspondence: jreecy@iastate.edu
+1Department of Animal Science, Iowa State University, Ames, IA, USA
+Full list of author information is available at the end of the article
+© 2013 Park et al.Even within species, multiple terms may
+be used to refer to the same trait (e.g., subcutaneous fat
+depth, subcutaneous adipose thickness, backfat thick-
+ness, etc.).
+Average ranks of the correct phenotypes found in a snippet
+Hassanpour et al.In some cases, domain
+ontologies provide an initial controlled vocabulary for
+identifying terms.In extracting relevant knowledge from scientific
+publications, the initial problem is finding articles relevant
+to a particular domain-related query.We plan to further evaluate our approach
+in a variety of biomedical domains.24 months
+ DW (delayed words): acquired words > 24 months
+ NW (no words): no words at time of ADI-R
+ NDP (not delayed phrases): acquired phrases
+?
+The original EMAP ontology contained
+more than 14,200 stage-specific terms for anatomical
+entities in the mouse embryo, corresponding to about
+3,400 “abstract” anatomy terms.The
+© 2013 Hayamizu et al.Nodes in the abstract mouse graph represent
+anatomical structures that exist during some time of
+embryo development and broadly correspond to so-
+called “material continuants” [6] (code.google.com/p/
+obo-relations/).In the original version of the EMAP ontology, individual
+term labels were not necessarily unique, often requiring
+Figure 2 EMAP and EMAPA ontologies provide stage-specific and stage-independent representations of mouse embryo anatomy.The ontology has been in active use for many
+Hayamizu et al.
+IDODEN follows the same architecture as IDOMAL,
+something that proved to be extremely efficient in terms
+of the ontology design.The remaining open issues are due to the distinctive
+properties of vector borne diseases.Journal of Biomedical Semantics 2013, 4:16 Page 6 of 6In the domain of vector-borne diseases,
+IDOMAL and MIRO, an ontology of Mosquito Insecti-
+cide Resistance [29] that has now been fully integrated
+in IDOMAL, are used by newly developed Decision Sup-
+port Systems for vector-borne diseases [30,31].These infections are
+characterized by the fact that they arise through the bio-
+logical interactions between three organisms (patient/
+host, vector and pathogen), rather than only two as is
+common in the vast majority of infectious diseases.
+Among the 28 false positive, 6 cases were
+rejected during the MDM because of additional informa-
+tion not available at the time of pre-screening, 5 were
+rejected on the basis of information present in their report
+Figure 4 The class modeling clinical trial exclusion because at least one of the exclusion criteria has beenmet after classification (here
+patients p0, p3 and p6 match the definition).F T F Exclude
+(E1)
+p7 T ?Methods
+We propose an OWL design pattern for modeling clinical
+trial eligibility criteria.The file clinicalTrial-getug14.tgz is a zipped tarball containing
+a readme.txt and the OWL files modeling the criteria and the patients’
+data for the first clinical trial from the evaluation set.The file clinicalTrial-getug16.tgz is a zipped tarball containing
+a readme.txt and the OWL files modeling the criteria and the patients’
+data for the first clinical trial from the evaluation set.
+Schofield et al.We recently es-
+timated the information content (IC) of pre-composed
+MP ontology terms used to code phenotypes in the
+EUMODIC mouse phenotyping pipeline [45], which in-
+cluded or excluded anatomic pathology descriptions,
+using their logical definitions.Table 1 Examples of pathology term qualifiers now incorporated into PATO
+Qualifier PATO Class name Definition
+Severity 0000461 Normal No lesions
+0000394 Mild Lesion dependent; often size, number and characteristics.Elements of the compound description are specified by the string of linked pentagons on the left
+hand side of the figure and specific examples given for three observations which taken together are indicative of foreign body pneumonia.These depended on the “school” to which the pa-
+thologists belonged, but more importantly on the etio-
+logic or mechanistic paradigm in which they were* Correspondence: ps@mole.bio.cam.ac.uk
+1Department of Physiology, Development and Neuroscience, University of
+Cambridge, Downing Street, CB2 3EG, Cambridge, UK
+2The Jackson Laboratory, 600, Main Street, Bar Harbor, ME 04609-1500, USA
+Full list of author information is available at the end of the article
+© 2013 Schofield et al.
+© 2013 Rebholz-Schuhmann et al.The machine
+learning community (e.g., http://mlcomp.org) has pro-
+posed such an approach, but the GSCs for the annotation
+of biomedical named entities requires different evaluation
+methods.Rebholz-Schuhmann et al.Rebholz-Schuhmann et al.The
+biomedical text mining community has engaged into the
+development of a selection of GSCs as a requirement for
+public competitions [2,3].
+The SAO was used primarily within prototype segmenta-
+tion and annotation tools developed for electron tomog-
+raphy data [6] to enhance search within the NIF across
+federated data [4] and, as described below, to annotate data
+derived from imaging and the literature on phenotypes as-
+sociated with neurodegenerative disease [7].Thus, the SAO had developed an independent set
+of cell component terms, with a heavy focus on those en-
+countered in the nervous system.Roncaglia et al.Roncaglia et al.Journal of Biomedical Semantics 2013, 4:20 Page 3 of 11
+http://www.jbiomedsem.com/content/4/1/20originally assembled (NIFSTD) [15].
+Machado et al.Machado et al.Additionally,
+the GO was chosen instead of a clinical vocabulary since it has been extensively used
+for annotation purposes, and thus possesses a background set of annotations that can be
+promptly used, which is not normally the case for clinical vocabularies.Such datasets are frequently characterized by a small
+number of clinical features and a high number of missing values, which difficults their
+use for knowledge extraction purposes.We propose that the application of an enrichment
+analysis to this type of dataset can result in the extraction of relevant knowledge from
+controlled vocabularies to improve the quality of the dataset and, therefore, improve the
+quality of the predictions made with it.In respect to the possibility of an insufficient level of detail,
+it can be overcome by considering more than one vocabulary for the same domain of
+knowledge, which we will do when analyzing the clinical features.
+de Bono et al.In our
+de Bono et al.de Bono et al.de Bono et al.de Bono et al.
+In addition,
+the mapping to a pre-existing data structure in the
+open-source caTissue application used for biospecimen
+collections in a medical center in Little Rock, AR dem-
+onstrated the adequacy of the coverage of OMIABIS.Endnotes
+ahttp://purl.obolibrary.org/obo/obi.owl
+bhttp://translationalmedicineontology.googlecode.com/
+svn/trunk/ontology/tmo.owl
+chttp://apps.who.int/classifications/icd10/browse/2010/en
+dThe Public Population Project in Genomics (P3G):
+http://www.p3g.org.org/obo/omiabis.owl.In addition, multiple
+entities from other ontologies, namely the Ontology of
+Biomedical Investigations (OBI)j and the Ontology of
+Medically Relevant Social Entities (OMRSE)k are im-
+ported using a tool based on the MIREOT methodology
+[16], which was developed in a joint endeavor between
+the University of Arkansas for Medical Sciences and the
+University of Arkansas at Little Rock [17].We chose to re-use the ontologies mentioned above
+based on the fact that they are members of the OBO
+Foundry and, thus, are built according to the same basic
+principles and extend the same upper ontology (BFO).Recently, UAMS
+created an Enterprise Data Warehouse (EDW) to facilitate
+access to and integration of clinical, basic-science, and
+other data for research and quality reporting.Methods
+Our aim is to provide a semantically rich representa-
+tion of biobank administration to facilitate the sharing
+of biobank data.
+The three levels of bio-models are
+inspired by function modelling in engineering (see, e.g.,
+[8]).A new ontology for intentions of bio-models
+In this section we provide first ideas for an ontology for
+the teleological function of bio-models.Second, dynamic models are
+considered on three levels: Models are systems of com-
+ponents and relations (model structure).Checklists
+To start the formalisation of a specific kind of sci-
+entific data, like bio-models, experiment protocols, or
+experimental results, the responsible community first
+of all has to agree on the information needed.Summarising they state:
+“[...] models fulfil a wide range of functions in building,
+exploring and applying theories; in various
+measurement activities; and in the design and
+production of technologies for intervention in the
+world.” ([5], p.24)
+The set of ways how models can be used, provided by
+Morrison and Morgan [5], is a good starting point for
+an upper classification of general model use intentions.
+Received: 21 January 2013 Accepted: 19 August 2013
+Published: 8 October 2013Journal of Biomedical Semantics 2013, 4:25 Page 4 of 8
+http://www.jbiomedsem.com/content/4/1/25with the qualifier ‘up’ in order to express that in a certain
+time step the interaction between Occludin and JAM has
+been upregulated.Journal of Biomedical Semantics 2013, 4:25 Page 7 of 8
+http://www.jbiomedsem.com/content/4/1/25bioinformatics tools such as ExprEssence can be used as
+an instrument for deriving mechanistic information from
+high-throughput data, turning information about con-
+tinuants into information about occurrents by differen-
+tial analysis.Journal of Biomedical Semantics 2013, 4:25 Page 3 of 8
+http://www.jbiomedsem.com/content/4/1/25physiological phenotypes of cells and their components.Journal of Biomedical Semantics 2013, 4:25 Page 5 of 8
+http://www.jbiomedsem.com/content/4/1/25Annotation propagation
+Both ontologies allow for annotation propagation.
+New branches under
+“experimental condition” include “controlled visible light
+condition”, “controlled in situ organ condition” and
+“pathogen”.Also, as will be
+discussed later, we have found that some groups have
+begun to extract only a small subset of terms from one
+of these ontologies, to use according to their needs.Smith et al.Smith et al.Smith et al.
+Spasi?Journal of Biomedical Semantics 2013, 4:27 Page 5 of 15
+http://www.jbiomedsem.com/content/4/1/27asymptomatic and symptomatic (one deletion operation)
+combined with the other two identical tokens indicates
+high similarity between the candidate terms, which can be
+used to aggregate the associated information and reduce
+the bias towards shorter terms.Journal of Biomedical Semantics 2013, 4:27 Page 12 of 15
+http://www.jbiomedsem.com/content/4/1/27they share the same domain, they naturally share some of
+the terminology used.Similarity calculation is the
+Spasi?Journal of Biomedical Semantics 2013, 4:27 Page 2 of 15
+http://www.jbiomedsem.com/content/4/1/27of terms they mention [7].
+*Correspondence: rebholz@ifi.uzh.ch
+1Institute of Computational Linguistics, University of Zürich, CH-8050 Zürich,
+Switzerland
+2European Bioinformatics Institute, Wellcome Trust Genome Campus,
+Hinxton, Cambridge, CB10 1SD, UK
+Full list of author information is available at the end of the article
+© 2013 Rebholz-Schuhmann et al.Journal of Biomedical Semantics 2013, 4:28 Page 2 of 18
+http://www.jbiomedsem.com/content/4/1/28
+Introduction
+The integration of the biomedical literature into the
+infrastructure of other biomedical data resources requires
+the identification of entities and concepts, such as pro-
+teins and gene named entities [1,2].Gene regulatory
+processes
+Rebholz-Schuhmann et al.A gene can be analysed by sequencing, but the observa-
+tion of a protein and its functions requires more complex
+experimental setups.Standards for protein and gene names
+There are several “standard” approaches to validate a
+PGN identified in text.
+Analoguous to mismatches in MP (see section “Mis-
+matches in EQ-lising MP”), mismatches in process enti-
+ties were partially due to not supporting synonyms in
+the current implementation of the GO server.Journal of Biomedical Semantics 2013, 4:29 Page 7 of 7
+http://www.jbiomedsem.com/content/4/1/29
+and “Mismatches in EQ-lising HPO”, for MP and HPO
+respectively.Most of these mismatches can be resolved by augment-
+ing the dictionary of the LingPipe FMA annotation server
+with additional terms.© 2013 Oellrich et al.Oellrich et al.
+However, at
+the current scale, classification is sufficiently fast, under
+40 seconds with the DL reasoner HermiT (http://www.We have also,
+so far, avoided the challenge of defining complex phe-
+notypes that have multiple features, such as the Minute
+Osumi-Sutherland et al.Journal of Biomedical Semantics 2013, 4:30 Page 8 of 10
+http://www.jbiomedsem.com/content/4/1/30
+(FBcv_0000443) phenotype, which combines slow devel-
+opment and short bristles.This
+includes a set of terms that refer to defects in percep-
+tion, which the GO classifies as a neurological process but
+not as behavior.As
+a result, 85% (258/305) classifications are inferred rather
+than asserted.
+Journal of Biomedical Semantics 2013, 4:31
+http://www.jbiomedsem.com/content/4/1/31RESEARCH Open AccessEnhanced XAO: the ontology of Xenopus anatomy
+and development underpins more accurate
+annotation of gene expression and queries on
+Xenbase
+Erik Segerdell1*, Virgilio G Ponferrada2, Christina James-Zorn2, Kevin A Burns2, Joshua D Fortriede2,
+Wasila M Dahdul3,4, Peter D Vize5 and Aaron M Zorn2Abstract
+Background: The African clawed frogs Xenopus laevis and Xenopus tropicalis are prominent animal model
+organisms.Xenopus research contributes to the understanding of genetic, developmental and molecular
+mechanisms underlying human disease.The XAO is integral to the functionality of Xenbase (http://www.Results: We significantly expanded the XAO in the last five years by adding 612 anatomical terms, 2934The XAO provides consistent terminology that can be applied to
+anatomical feature descriptions along with a set of relationships that indicate how each anatomical entity is related
+to others in the embryo, tadpole, or adult frog.
+They are also frequently used to group annotations in biologically meaningful
+ways.Costa et al.Textual definitions of
+terms, ideally supplemented with images, are therefore
+important for consistent and accurate manual annotation.Textual definitions provide human read-They provide a widely-used
+means for standardising the annotation of phenotypes and expression in both human-readable and
+programmatically accessible forms.
+Description: As a step towards development of such a resource, and to enable large-scale integration of
+phenotypic data across vertebrates, we created the Vertebrate Taxonomy Ontology (VTO), a semantically
+defined taxonomic resource derived from the integration of existing taxonomic compilations, and freely
+distributed under a Creative Commons Zero (CC0) public domain waiver.Ideally, there would be a single, expansive, authoritative taxonomy that includes extinct and extant taxa,
+information on synonyms and common names, and monophyletic supraspecific taxa that reflect our current
+understanding of phylogenetic relationships.The VTO includes both extant and
+extinct vertebrates and currently contains 106,947 taxonomic terms, 22 taxonomic ranks, 104,736 synonyms,Journal of Biomedical Semantics 2013, 4:34
+http://www.jbiomedsem.com/content/4/1/34DATABASE Open AccessThe vertebrate taxonomy ontology: a framework
+for reasoning across model organism and species
+phenotypes
+Peter E Midford1,2, Thomas Alex Dececchi3, James P Balhoff2,4, Wasila M Dahdul2,3, Nizar Ibrahim5, Hilmar Lapp2,
+John G Lundberg6, Paula M Mabee3, Paul C Sereno5, Monte Westerfield7, Todd J Vision2,4 and David C Blackburn8*Abstract
+Background: A hierarchical taxonomy of organisms is a prerequisite for semantic integration of biodiversity data.
+; licensee BioMed Central
+Commons Attribution License (http://creativec
+reproduction in any medium, provided the orrapidly and achieved a number of successes for existing
+drugs, such as sildenafil [2] and thalidomide [3].Zhang et al.Zhang et al.Zhang et al.Zhang et al.
+Around 32,000 relevant
+PubMed abstracts were queried for candidate subclasses
+of these upper-level classes (bigram to 5-gram word
+Gündel et al.The ontology class la-
+bels and synonyms were converted into a dictionary for-
+mat, then these terms were searched in both training set
+and test set using ProMiner.BdB
+contributed to ontology design.Endnotes
+anumber classes (without owl:Thing): 2920; number
+roots: 10; number leaves: 1927; max width/breadth: 727;
+avg.36% of all classes were added manually
+inside the HuPSON namespace, the other 64% stem from related
+ontologies.
+Journal of Biomedical Semantics 2013, 4:36 Page 2 of 8
+http://www.jbiomedsem.com/content/4/1/36Background
+The use of the rat for genetics studies in Europe can be
+traced back to the first half of the eighteenth century.Journal of Biomedical Semantics 2013, 4:36 Page 7 of 8
+http://www.jbiomedsem.com/content/4/1/36for strains based on disease and phenotypes.Journal of Biomedical Semantics 2013, 4:36 Page 4 of 8
+http://www.jbiomedsem.com/content/4/1/36middle column along with siblings, parents in the left
+column and children in the right (Figure 4).Journal of Biomedical Semantics 2013, 4:36 Page 5 of 8
+http://www.jbiomedsem.com/content/4/1/36
+Figure 5 Graphic view of a congenic substrain.Journal of Biomedical Semantics 2013, 4:36 Page 6 of 8
+http://www.jbiomedsem.com/content/4/1/36
+Nigam et al.
+PROV-O and PAV mapping
+The earlier version 1.2 of PAV was recognized (as a
+component of the SWAN ontology) by the W3C Prov-
+enance Incubator Group [45] and was one of the foun-
+dational models [46] on which the requirements for the
+general provenance model later defined by the W3C
+Provenance Working Group.pted from [40].In fact, the PROV-O authors do not claim
+that the vocabulary is complete.Journal of Biomedical Semantics 2013, 4:37 Page 3 of 22
+http://www.jbiomedsem.com/content/4/1/37applications: Dublin Core Terms (DC Terms) [2],
+PROV-O [3], OPM [4], and Provenance Vocabulary [5].For instance,
+in Figure 2, the creator is the user who formally encodes
+the claim, while the author is the person who wrote the
+original published article.Journal of Biomedical Semantics 2013, 4:37 Page 2 of 22
+http://www.jbiomedsem.com/content/4/1/37Several provenance vocabularies including Dublin
+Core Terms (DC Terms) [2], PROV-O [3], OPM [4], and
+Provenance Vocabulary [5] partially address these gen-
+eral needs, at varying levels of richness, complexity and
+maturity.
+Livingston et al.Livingston et al.Livingston et al.Livingston et al.Journal of Biomedical Semantics 2013, 4:38 Page 11 of 15
+http://www.jbiomedsem.com/content/4/1/38Natural language processing (NLP) pipelines are fre-
+quently composed of sequences of components that each
+produce output based on the output of earlier annotation
+layers.
+Journal of Biomedical Semantics 2013, 4:39
+http://www.jbiomedsem.com/content/4/1/39SHORT REPORT Open AccessIntroducing glycomics data into the
+Semantic Web
+Kiyoko F Aoki-Kinoshita1, Jerven Bolleman2, Matthew P Campbell3, Shin Kawano4, Jin-Dong Kim4, Thomas Lütteke5,
+Masaaki Matsubara6, Shujiro Okuda7,8, Rene Ranzinger9, Hiromichi Sawaki10, Toshihide Shikanai10,
+Daisuke Shinmachi10, Yoshinori Suzuki10, Philip Toukach11, Issaku Yamada6, Nicolle H Packer3
+and Hisashi Narimatsu10*Abstract
+Background: Glycoscience is a research field focusing on complex carbohydrates (otherwise known as glycans)a,
+which can, for example, serve as “switches” that toggle between different functions of a glycoprotein or glycolipid.; licensee BioMed
+Creative Commons Attribution License (http:/
+distribution, and reproduction in any mediumproblems faced by the Glycomics research community
+due to the disconnected and incomplete nature of exist-
+ing databases [1].Journal of Biomedical Semantics 2013, 4:39 Page 2 of 7
+http://www.jbiomedsem.com/content/4/1/39KEGG resources as a new glycan structure database that
+is linked to their genomic and pathway information [5].Note that a unified prefix “glyco:” was agreed
+upon, as well as the use of identifiers.org as the URI to be
+used when referencing external databases.KEGG GLYCAN was added to theCentral Ltd.
+Conclusions: The ontology-based data representation and integration using the FDA-approved information from
+the vaccine package insert documents enables the identification of adverse events from vaccination in relation to
+predefined parts of the population (age groups) and certain groups of vaccines.First, those vaccines that are associated with the largest
+number of VAEs were analyzed (Table 2).One approach is to
+link a vaccinee to a quality named ‘age’, and then link
+the ‘age’ to a datatype using the OBI relation term ‘quality
+measured as’.OAE defines an ‘adverse event’ as a
+pathological bodily process that occurs after a medical
+intervention (e.g., vaccination, drug administration).Secondly, the ontology OWL representation is also
+interpretable by computers and software programs.
+Jensen et al.The Open Biomedical
+Ontology (OBO) Foundry promotes the development of
+consistent formal ontologies based on a common upper-
+level reference ontology to address this need [9].We have also imported over
+700 classes from external ontologies, such as the Protein
+Ontology (PR), Foundational Model of Anatomy (FMA),
+and Ontology for Biomedical Investigations (OBI) [15-17].ND is being developed in compliance with the Open
+Biomedical Ontology Foundry principles and builds upon the paradigm established by the Ontology for General
+Medical Science (OGMS) for the representation of entities in the domain of disease and medical practice.We have imported and utilize over 700 classes from related ontology efforts including the Foundational
+Model of Anatomy, Ontology for Biomedical Investigations, and Protein Ontology.
+This is crucial within the context of
+community-level model reuse because, when repurpos-
+ing a model, modelers must determine whether its
+underlying assumptions preclude its use for a modeling
+project.Journal of Biomedical Semantics 2013, 4:41
+http://www.jbiomedsem.com/content/4/1/41RESEARCH Open AccessOntology of physics for biology: representing
+physical dependencies as a basis for biological
+processes
+Daniel L Cook1*, Maxwell L Neal3, Fred L Bookstein4 and John H Gennari2Abstract
+Background: In prior work, we presented the Ontology of Physics for Biology (OPB) as a computational ontology
+for use in the annotation and representations of biophysical knowledge encoded in repositories of physics-based
+biosimulation models.Cook et al.Cook et al.Each
+Cook et al.
+Thus, ENVO
+was developed with the goal of interoperability with the
+numerous biological and biomedical ontologies compli-
+ant with Open Biomedical and Biological Ontologies
+(OBO) Foundry principles [17,18] and is being aligned
+to the Basic Formal Ontology (BFO 2.0 [19]; see below)
+in aid of semantic homogeneity.Journal of Biomedical Semantics 2013, 4:43 Page 2 of 9
+http://www.jbiomedsem.com/content/4/1/43suitable for the annotation of any record that has an envir-
+onmental component.ENVO is
+comprised of classes (terms) referring to key environment-
+types that may be used to facilitate the retrieval and inte-
+gration of a broad range of biological data.For example,
+when taken simply as the “surrounding space” of an
+entity, the causal relevance of an environment to that
+entity as well as its boundaries are unclear.Journal of Biomedical Semantics 2013, 4:43 Page 3 of 9
+http://www.jbiomedsem.com/content/4/1/43[ENVO_00002297] hierarchy.
+This situation necessitates careful tracking to en-
+sure that all valid NDCs (and, indeed, any useful informa-
+tion) associated with a retired RXCUI can be associated
+with the most recent RXCUI that refers to the same entity.Results: We built DrOn in a modular fashion to facilitate simpler extension and development of the ontology and
+to allow reasoning and construction to scale.DrOn contains a total of 514,268 classes as of this
+writing.The dron-rxnorm module contains all of the informa-
+tion mined from RxNorm, which at this point of the
+ontology’s development, is the bulk of DrOn’s informa-
+tion.As such, we
+built our internal representation to maintain provenance
+information of the sources separately, ensuring that we
+can both track the provenance of the various entities as
+the ontology develops and add new sources without ad-
+versely affecting the existing ontology.
+Principally, it improves the quality of linked data
+in the Bio2RDF network and makes it easier to access or recreate the linked data
+locally.Although there are several efforts for provisioning life science linked data such as
+Neurocommons [10], LinkedLifeData [11], W3C HCLS [12], Chem2Bio2RDF [13] and
+BioLOD [14], Bio2RDF is unique in several ways.The open-source Bio2RDF project [6-8] uses Semantic Web technologies and a set of
+conventions to provide linked data [9] for the life sciences.Conclusions
+Bio2RDF is an open source project to coordinate the provision of linked data for the
+life sciences.Conclusions: This coordinated release marks an important milestone for the Bio2RDF
+open source linked data framework.
+Such biosimulation models represent
+formal, physics-based expressions of one or more key biomedical hypotheses that are
+of such interest as to warrant the difficult, time-consuming, and error-prone effort
+required to encode, debug, and evaluate the model.How-
+ever, to develop and refine their hypotheses, experimenters will need to be able to
+dynamically combine and modify PhysioMaps.Such dependencies can obscured
+by intervening variables and equations that may not have clear semantics.Figure 3a shows, on the left side, a PhysioMap representation of a
+Figure 3 Prototype PhysioMaps as visualized by the Chalkboard system (Cook et al., 2007): (a) shows a
+simple model of glycolysis and (b) shows blood flow processes in a cardiovascular (CV) model.Our vision is to develop multiscale/multidomain physiological pathway maps, pat-
+terned after biochemical pathway maps, that represent the physiological content of bio-
+logical models and datasets for use in large-scale physiological integration projects.
+On top
+of that, MeSH terms are used to automatically improve the recall of PubMed
+searches through query expansion: By mapping keywords from a search query to
+MeSH terms, relevant documents are included in the search results even if they only
+contain synonyms or hyponyms of the original keyword.Conclusions
+We investigated possibilities for giving patent searchers access to the same advantages
+that are offered for PubMed through MeSH annotations.The document numbers were used to make sure that dif-
+ferent versions of the same patent were not counted multiple times.These terms show multiple
+aspects of the document, and their distance in MeSH is 14.The
+first subsection explains our analyses of MeSH and IPC, and the following subsection
+concerns our experiments with patent categorization.
+Many of these annotations, especially for human,
+are the product of manual and automated annotation by the Gene Ontology Annotation
+(GOA) team at UniProt [2].We pro-
+duced each term’s gene set by associating that year’s annotations to the terms in the
+ontology.Results
+Creating the Analytical Framework
+Our framework consists of the following steps:
+1 Identify term(s) of interest T. These may be representative terms of an area of interest
+or a sample across the GO structure.The ever-increasing size of the human GO annotation dataset
+(Figure 1) suggests that the structured representations of gene function are still very
+much in flux.This process is among
+Figure 1 Cumulative annotations from 2002 through 2011 The increase in individual gene:term
+annotation pairs from the start of 2002 through the start of 2012.
+In our model, we follow the four principles proposed by Tim Berners-Lee for publishing
+Linked Data [22]: (i) using Uniform Resource Identifiers (URIs) to identify things,
+(ii) using Hyper Text Transfer Protocol (HTTP) URIs to enable things to be referenced
+and looked up by software agents, (iii) representing things in RDF and providing a
+SPARQL endpoint, and (iv) providing links to external URIs in order to facilitate knowl-
+edge discovery.We expose our model, services, prototype, and datasets at http://biotea.idiginfo.org/
+Conclusions: The semantic processing of biomedical literature presented in this paper
+embeds documents within the Web of Data and facilitates the execution of concept-
+based queries against the entire digital library.In our approach, existing ontologies are
+brought together in order to facilitate the representation of sections in scientific literature
+as well as the identification of biologically meaningful fragments.The
+Biotea project comprises and makes available (i) a set of RDF files generated from the
+open-access subset of PMC and enriched with semantic annotations, (ii) a Web Services
+API for querying the RDF dataset, (iii) a SPARQL Protocol and RDF Query Language
+(SPARQL) endpoint containing a subset of the RDF files as a proof of concept, (iv) an
+article-centric prototype that acts as an interface to the WoD, and (v) an implemented
+transformation process from our RDF files to Bio2RDF [18,19].PMC is a free full-text archive of biomedical literature; currently, it includes 1,679
+journals.
+Selection from hierarchical structure is also better suited for curation than selection
+from a flat list of assays.The Immune Epitope Database (IEDB,
+www.iedb.org) utilizes the Ontology for Biomedical Investigations (OBI) and several
+additional ontologies to represent immune epitope mapping experiments.Figure 1 Conversion of IEDB assay types from a static list to terms in OBI used to generate new search
+interface utilizing a hierarchical tree.One
+branch of OBI is its hierarchy of assays.With the term design accomplished and the QTT templates developed, the task of
+migrating the hierarchical organization of assays in the ontology into IEDB and its
+search interface was straightforward.
+Despite the undoubted importance of probabilities in science it is unfortunately the
+case that conventional knowledge representations in bio-medicine are insufficient to
+support probabilistic reasoning.For example in 2001 Tissenbaum & Guarente showed that increased
+dosage of the SIRT1 homolog extends lifespan in the nematode (Caenorhabditis ele-
+gans) [22].To address this need we propose the ontology HELO (HypothEsis
+and Law Ontology) that supports probabilistic reasoning about bio-medical research
+statements.Adam then planned and executed cycles of aux-
+otrophic experiments to test these hypotheses.There is therefore a need for a representa-
+tion that focuses on the probabilistic features of research statements, and supports prob-
+abilistic reasoning.
+Journal of Biomedical Semantics 2013, 4(Suppl 1):I1
+http://www.jbiomedsem.com/content/4/S1/I1
+Page 3 of 4
+Declarations
+This article has been published as part of Journal of Biomedical Semantics Volume 4 Supplement 1, 2013: Proceedings
+of the Bio-Ontologies Special Interest Group 2012.The authors discuss the long-term goal of enabling a true
+semantic integration of data and knowledge in the biomedical domain.The authors demonstrate the utility of
+HELO on three worked examples: changes in the probability of the hypothesis that sir-
+tuins regulate human life span; changes in the probability of hypotheses about gene
+functions in the S. cerevisiae aromatic amino acid pathway; and the use of active learning
+in drug design, where a strategy for the selection of compounds with the highest prob-
+ability of improving on the best known compound was used.soldatova@brunel.ac.uk
+1Brunel University, London, UK
+Abstract
+Over the 15 years, the Bio-Ontologies SIG at ISMB has provided a forum for
+discussion of the latest and most innovative research in the bio-ontologies
+development, its applications to biomedicine and more generally the organisation,
+presentation and dissemination of knowledge in biomedicine and the life sciences.PhysioMap and SemSim (semantic simulation) models are based on the Ontol-
+ogy of Physics for Biology (OPB).
+This overview will describe these classes of
+applications, discuss a few examples of each type, and which NCBO Web services are
+used by these applications.NCBO Technology overview
+BioPortal is an open repository of biomedical ontologies that stores ontologies devel-
+oped in various formats, such as OWL, OBO format, Protégé frames, and the Rich
+release format, and provides access to this content via Web browsers and Web services
+[1,2].This is an Open Access article distributed under the terms of the
+Creative Commons Attribution License (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and
+reproduction in any medium, provided the original work is properly cited.The NCBO Web services are documen-
+ted at: http://www.bioontology.org/wiki/index.php/NCBO_REST_services
+Classes of applications incorporating ontologies via NCBO Technology
+Ontology development and visualization
+With the growing interest in the use of ontologies in the health care and life sciences,
+additional tools are being developed to support the development of ontologies within
+new biomedical domains and the re-use of existing ontologies to build application
+ontologies.Whetzel and Journal of Biomedical Semantics 2013, 4(Suppl 1):S8
+http://www.jbiomedsem.com/content/4/S1/S8
+Page 2 of 10
+processes text to recognize terms from ontologies in BioPortal that exist within the
+text [4].

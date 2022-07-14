@@ -1,0 +1,1640 @@
+It would be an asset for biomedical ontologies to be able to support such a probabilistic reasoning
+and formalize Bayesian indicators of performance: sensitivity, specificity, positive predictive value and negative
+predictive value.Thus, the prevalence value
+can be identified to the objective probability assigned
+to the disposition dPrevg,M .To solve this problem, we will formalize the real IP
+value as the probability assigned to a disposition borne by
+an instance of group of individuals; and estimates of IPs as
+data items which are about such a disposition.This group g1 will be formalized as a collection of
+humans (for more on collections, see [18]).Keywords: Sensitivity, Specificity, Medical test, Spectrum effect, Disposition, Realist ontology, Informational entity
+Background
+Definition of indicators of performance
+Biomedical ontologies aim at providing the most exhaust-
+ive and rigorous representation of reality as described by
+biomedical sciences.
+Therefore
+these relations may be a poor fit to clinical drug ontology
+use cases.However, this fea-
+ture may facilitate clustering of drug-indication relationsand so explain WHO-ATC’s wide acceptance as a stand-
+ard for drug classification and discovery research.Keywords: Drug indications, Drug-disease relations, Drug ontologies, Drug information integration, UMLS, WHO-ATCBackground
+Biomedical information overload and the potential of
+formal ontologies to help overcome it are well recog-
+nized [1–3].Conclusions: The DID is a database of structured drug-indication relations intended to facilitate building practical,
+comprehensive, integrated drug ontologies.Drug-disease relations, specifically
+drug-indication relations, are a prime candidate for representation in ontologies.
+For this pur-
+pose we developed an automated system which gathers
+Jovanovik and Trajanov Journal of Biomedical Semantics  (2017) 8:3 Page 3 of 24
+drug data from the official national drug registries of
+twenty-three different countries, executes data cleaning,
+aligns and transforms the data into 5-star Linked Data and
+publishes them on the Web in a common, aligned and
+consolidated Linked Data dataset.3Workflow: Transforming 2-star data from different national drug data registries to 5-star Linked Drug Data
+Jovanovik and Trajanov Journal of Biomedical Semantics  (2017) 8:3 Page 8 of 24
+OpenRefine instance with the RDF extension, that can
+be used as a REST-based service.To demonstrate the usability of
+the generated Linked Drug Data datasets, we provide
+example use-cases on the project website [60] and on
+GitHub [58].Storage
+II.Additionally, data dumps of the
+dataset are available on Datahub [55].
+While sufficient for evaluatingthe precision and reproducibility of the annotations, this
+skewed dataset would be insufficient for the evaluation
+of a diagnostic system.We restricted the 2795
+PubMed citations used for the text corpus to articles in
+English, indexed with the MeSH term “Ultrasonography”
+and for which the article was freely available.Journal of Biomedical Semantics  (2017) 8:4 Page 6 of 13?sign skos:hiddenLabel ?sign_id;
+rdfs:subClassOf* epo:OPPIO_0000189 .Dhombres et al.We have demonstrated the use of this
+Dhombres et al.
+D do /* for each graph in
+the dataset */
+6 SD.addGraphName(u) ;
+7 for each p ?From the collection of raw data summaries S , we then
+compute some indexes that will be used to accelerate the
+source-selection process:
+1.“Methods”
+section presents the three main components of SAFE
+query planning.As can be seen from the results, the index sizes for
+all approaches are much smaller than the relative size
+of the raw data dump.Given that the indexes of
+HiBISCuS, SPLENDID and SAFE remain quite small rel-
+ative to total data sizes, they can easily be loaded into
+memory, where lookups can be performed in millisec-
+onds.
+As no morphological axis is available
+within the NCIt, we have adapted the NCIt by adding
+concepts corresponding to ICD-O-3morphologies, which
+we related to the corresponding diagnoses (based on the
+ICD-O-3 annotation of the NCIt).A total of 20133 (0.27%) expressions sub-
+suming at least one NCIt code were identified and the
+corresponding classes were introduced in the model as
+diagnoses.During the building pro-
+cess, a significant part of NCIt concepts was retrieved as
+subclasses of multiple diagnosis classes.The NCIt structure and the available relationships can help to bridge disease
+classifications taking into account their structural and granular heterogeneities.The NCIt structure and the available relationships
+can help to bridge disease classifications taking into
+account their structural and granular heterogeneity.
+Similarly, in our
+Kulmanov and Hoehndorf Journal of Biomedical Semantics  (2017) 8:7 Page 7 of 10
+Fig.Strategies for the latter
+include computing the mean of all pairwise similarities,
+computing the Best Match Average, and others [1].Kulmanov and Hoehndorf Journal of Biomedical Semantics  (2017) 8:7 Page 3 of 10
+Then we compute similarities between each pair of genes
+using simGIC measure [1] and Resnik’s similarity mea-
+sure [20] combined with Average and Best Match Average
+(BMA) strategies and generate similarity matrices.While the correlations are rela-
+tively small, there is nevertheless a bias that is confirmed
+by selecting a similarity measure that follows the same
+Kulmanov and Hoehndorf Journal of Biomedical Semantics  (2017) 8:7 Page 8 of 10
+Fig.A second group of similarity measures
+Kulmanov and Hoehndorf Journal of Biomedical Semantics  (2017) 8:7 Page 5 of 10
+Fig.
+Journal of Biomedical Semantics  (2017) 8:8 Page 7 of 10
+Fig.Journal of Biomedical Semantics  (2017) 8:8 Page 9 of 10
+Fig.Full end-
+to-end processing of MEDLINE citations takes approxi-
+mately 30 - 45 seconds depending on citation length and
+complexity.It currently grows at the
+rate of about 760,000 citations per year and covers over
+5600 international biomedical journals in 36 languages.6 where we have high-
+lighted the descriptions of the experiment subjects in the
+Title, Abstract, and Full Text.
+A 6,000 annotated tweets gold corpus with Kappa annotation agreement at 0.851
+was created and made public available.However, as we chose the hierarchical classification
+methods, we need to train three SVMs models inde-
+pendently.3 Sentiment distribution in 6,000 tweets gold standard.(F: F-1 score; P: pre-
+cision; R: recall; for the categories that do not indicate the
+metric, F-1 score are used)
+Classification
+Model
+Plain Classification (Baseline
+model)
+Hierarchical
+Classification
+Micro-
+averaging
+F 0.6732 0.7208
+Macro-
+averaging
+P 0.4455 0.5402
+R 0.3574 0.4386
+F 0.3967 0.4841
+Unrelated 0.8044 0.8599
+Neutral 0.5792 0.6181
+Positive 0.6528 0.7021
+NegSafety 0.7006 0.7277
+NegEfficacy 0 0.2593
+NegCost 0 0
+NegResistant 0 0
+NegOthers 0.155 0.4645
+Table 3 10-fold cross validation performance on different
+feature sets combinations.The number of tweets holding negative
+opinions on HPV vaccines exceeded the tweets holding
+positive opinions.
+For the PDMP research, we have begun but not com-
+pleted work on whether particular opiate and opioid-
+containing drug products are short vs. long acting
+formulations.Journal of Biomedical Semantics  (2017) 8:10 Page 9 of 11
+functions however, we can represent in DrOn the thera-
+peutic functions of drug products for which no mechan-
+ism of action at the molecular level is yet known.We originally created DrOn for use cases in comparative effectiveness
+research, primarily to identify historically complete sets of United States National Drug Codes (NDCs) that represent
+packaged drug products, by the ingredient(s), mechanism(s) of action, and so on contained in those products.We also did not represent the intended routes of ad-
+ministration of drug products, which prevented inclu-
+sion of an equivalent class axiom on all classes added in
+response to PRISM term requests.Journal of Biomedical Semantics  (2017) 8:10 
+DOI 10.1186/s13326-017-0121-5
+Background
+The Drug Ontology (DrOn) is a Web Ontology Language
+version 2 (OWL2) based representation of drug products
+and their ingredients, mechanisms of action, strengths,
+and dose forms, as well as packaged drug products as rep-
+resented by United States National Drug Codes (NDCs)
+[1–3].
+Elements of
+the Linked Data paradigm facilitate the systematic and scalable integration of relevant evidence sources.Evidence “linkouts” – the bridge between the summary
+and “drill down” use cases
+An important data element in the drug_hoi_evidence
+table is the evidence_linkout column.LAERTES provides open and
+scalable architecture for linking evidence sources relevant
+to investigating the association of drugs with HOIs.Data are aggregated from the evidence items
+and inserted into this table during the evidence load
+process using queries against the tables shown in Fig.Results: LAERTES provides a standardized, open, and scalable architecture for linking evidence sources relevant to
+the association of drugs with health outcomes of interest (HOIs).
+Using VO,
+INO, and normalized E. coli gene names, we applied an ontology-based SciMiner literature mining strategy to
+mine all PubMed abstracts and retrieve E. coli vaccine-associated E. coli gene interactions.Fourth, we further demonstrated that the
+centrality-based analysis enhanced our ability in identi-
+fying hub or critical genes or nodes in the E. coli gene-
+vaccine intearction network.Given so
+many E. coli strains and different E. coli usages, it has been
+a challenge in mining vaccine-related E. coli gene interac-
+tions from the large pool of literature reports.Conclusions: Vaccine-related E. coli gene-gene interaction network was constructed using ontology-based literature
+mining strategy, which identified important E. coli vaccine genes and their interactions with other genes through
+specific interaction types.These E. coli gene names, vaccine
+names, vaccine genes, and interaction keywords were
+then combinatorially used by SciMiner to process all
+PubMed abstracts to construct a vaccine-related E. coli
+Hur et al.
+Schwarte et al.Saleem et al.Acosta et al.It
+makes use of the min-wise independent permutations
+[27] and compact data summaries to extend existing
+SPARQL query federation engines in order to achieve
+the same query recall values while querying fewer
+SAPRQL endpoints, which is a very specific optimi-
+sation solution for source selection.Given
+a SPARQL query, the first step is to parse the query and
+get the individual triple patterns (Step 1).
+A short list of the most frequent phenotypes is shown
+in Table 1 where the top two phenotypes in the corpus
+are “health risk” and “smoking”.As opposed to the previous biomedical relation extrac-
+tion corpora containing true and false types of relations, the
+annotated associations in the corpus were divided into
+three classes: positive, negative and neutral candidates.PKDE4J [5] and Dimex [6] are two methods for
+extracting mutation and disease association, the latter
+being a rule-based unsupervised mutation-disease asso-
+ciation extraction working on the abstract level.4 A sample of SNP and phenotype named entity recognition in the corpus
+Table 1 Some of the most occurred phenotypes in the corpus
+Phenotype/phenotypic trait Num.The reported f-score was measured for the detec-
+tion of positive SNP-phenotype association candidates.
+As mentioned before, MeSH Now was developed in
+2014 based on the learning-to-rank framework we first
+proposed in 2010 [3] for automatic MeSH indexing.Thus there are many outdated MeSH
+Fig.The rationale for Formula
+(1) is that if the (i + 1)th MeSH term was assigned with a
+score much smaller than the ith MeSH term, the MeSH
+terms ranked lower than i would not be considered rele-
+vant to the target article.Like many manual annotation projects [26–30],
+MeSH indexing is a labour-intensive process.Next,
+we apply a learning-to-rank algorithm to sort the candi-
+date MeSH terms based on the learned associations be-
+tween the document text and each candidate MeSH
+term.
+They improved the results
+obtained by Hansen et al.Coulet et al.Hoehndorf et al.Garten et al.Recently,
+Funk et al.
+(1) below
+describe the overall quality evaluation score based on the
+four scores.The
+syntactic score (2) describes the encoded readability of the
+ontology.Biomedical ontologies have influencedmedical research
+with the impact and efforts of the Gene Ontology [1],
+UMLS [2], SNOMED [3], etc.Focusing the attention on the modulated weighted
+scores for the drug ontologies, DIKB ended being the bet-
+ter quality drug ontology over RxNORM with an overall
+score of 0.75 than RxNORM’s 0.69.This
+paper introduces how to effectively utilize a semiotic-inspired approach to ontology evaluation, specifically towards
+drug-related ontologies hosted on the National Center for Biomedical Ontology BioPortal.
+Osumi-Sutherland et al.1 is specified by
+Osumi-Sutherland et al.Osumi-Sutherland et al.Osumi-Sutherland et al.Journal of Biomedical Semantics  (2017) 8:18 Page 4 of 7
+Fig.
+The second implication is that we gained new insights
+on how the ISO 11179 standard could interact with the
+CIMI Reference Model for supporting detailed clinical
+modeling.A BCR data dictionary has been produced
+using the standard CDEs from NCI caDSR.Several Semantic Web-based representations of the
+ISO 11179 Part 3 meta-model have been created for pro-
+jects including the XMDR project [16], Semantic MDR
+in a European SALUS project [17] and CDISC2RDF in
+FDA PhUSE Semantic Technology project [18].The repository covers all 38
+clinical cancer study domains, comprising 316 distinct
+object classes, 4719 distinct properties, 1015 non-
+enumerated value domains and 1795 enumerated value
+domains (i.e., value sets).We created a JAVA program that pro-
+duces an OWL rendering of the CIMI Reference Model
+using the UML2OWL mappings specified by the Object
+Management Group (OMG) Ontology Definition meta-
+model (ODM) standard [22].
+(XYZ)) is
+identified as a gene/disease name abbreviation candidate
+if it is in the uppercase form, has length <6 (the length
+was decided by manually analysing a random subset of
+the Uniprot and EFO dictionaries) and annotated by
+the system either as a disease or a gene name, whereas,
+the text located immediately before the parentheses is
+Kafkas et al.Although we reduce a very high level of ambiguity by
+applying the dictionary refinement process before text
+mining the documents, some target and disease name
+abbreviations could still be ambiguous with some other
+names.The evidence includes common disease genetic evidence
+based on GWAS study results from GWAS Catalog [2],
+rare Mendelian disease evidence based on ClinVar [3]
+clinical variant information from EVA and text mined
+target-disease associations from the Europe PMC
+(https://europepmc.org/) literature database [4] (see Table 3
+for a complete list of evidence types).The confidence score of a given document
+represents how valuable the document is in the scope of target validation for a given target-disease association by
+taking into account the credibility of the association based on the properties of the text.The data providers of the platform are asked to
+ground their target and disease entities in to these refer-
+ence resources so as to integrate the evidence in the
+platform.
+Ontology Recommender 1.0 sometimes suggests
+ontologies with high specialization scores but with
+very low input coverage, which makes the ontologies
+inappropriate for the user’s input.This is an expected result,
+given that the recommendation approach used by
+Ontology Recommender 1.0 is based on the relation
+between the number of annotations provided by each
+ontology and its size, which is our measure for
+ontology specialization.Suppose that a researcher needs to find the
+best ontologies for a list of biomedical terms.Ontology Recommender 2.0 recommends over 500 biomedical ontologies from the NCBO BioPortal
+platform, where it is openly available (both via the user interface at http://bioportal.bioontology.org/recommender,
+and via a Web service API).This approach
+has been implemented as release 2.0 of the NCBO
+Ontology Recommender, a system that is able to find
+the best ontologies for a biomedical text or set of
+keywords.
+Trial integration In order to assess the feasibility of
+the above approach, we conducted a trial integration of
+some examples taken from the three-level ontology of
+abnormal states, the disease ontology, and some typical
+external resources, in which we used 386 abnormal
+states consisting of 279 abnormal states that are super
+classes of 107 states that are the bottom level classes
+appearing in 12 typical diseases from three medical spe-
+cializations, i.e., cardiovascular medicine, neurology, and
+gastroenterology.Keywords: Disease ontology, Definition of diseases, River flow model of disease, Linked data, Navigation system
+Background
+Recently, medical information resources that store consid-
+erable amount of data have become available.General disease chains
+are represented as an aggregation of the definitions of
+abnormal states.1554 diseases and 7080 abnormal states in six major clinical areas, which are
+extracted from the disease ontology, are published as linked data (RDF) with SPARQL endpoint (accessible API). 1554 diseases and 7080 abnormal states in six
+major clinical areas, which are extracted from the
+above RFM-diseases, are published as linked data
+(RDF) with SPARQL endpoint (accessible API).
+These GO terms usually describe some processes or pathways of particular interest, which are related
+to the experiment that is being performed.Gruca and Sikora Journal of Biomedical Semantics  (2017) 8:23 Page 3 of 14
+Related work
+So far, to find co-appearance of Gene Ontology terms,
+association rule induction algorithms were applied.Also, Gruca [23] applied FP-growth algorithm to
+find combinations of GO terms for functional description
+of genes.To help the expert during such analysis, a lot of tools
+have been invented and successfully applied during last
+years.Keywords: Functional description, Gene Ontology, Logical rules, Expert-driven rule induction
+Background
+Introdution
+Over 20 years ago, high-throughput technologies for the
+analysis of genomic data opened a new era in molecu-
+lar biology and genetics.
+Santana da Silva et al.DL queries can be answered based on satisfiability
+testing and class subsumption.the ontological content
+proper, whereas the ABox contains contingent “asser-
+tions" about individuals.tables, fields) related to each other?Entries from biomedical databases derive mostly from
+harvesting scientific literature or, otherwise, from the
+results of experiments.
+Thus the discovery of new disease terms could arise
+from future work based on such analyses.Once defined as a child, a disease
+does not have another chance to be promoted.We combined disease-gene associations
+from the two databases as in our previous work [1],
+using the MEDIC merged disease vocabulary (down-
+loaded from the Comparative Toxicogenomics Database
+[22] on February 3rd, 2016).The Unified Medical Language Sys-
+tem (UMLS) metathesaurus includes disease terms from
+multiple taxonomies; while it is not intended to be an
+ontology, its semantic network can identify some relation-
+ships between terms [12].To further advance such
+research and biomedical knowledge in the genomic era,
+a recent National Academy of Sciences working group
+has called for the development of new disease taxonomies
+better suited to incorporate molecular information [4].
+Girardi et al.ObTiMA, described by Stenzhorn et al.In a survey of semantic
+wikis featuring OWL reasoning and SPARQL3 querying
+facilities [10], a user evaluation of a chosen semantic
+Gonçalves et al.Bona et al.Gonçalves et al.
+In the table, #PPIt is
+the number of interactions in the network; #PPI is the
+number of interactions in the group; Pct(%) presents the
+percentage of interactions in the group.These methods
+are proposed on the principle of guilt-by-association
+(GBA), that is, the closer the two proteins are in the net-
+work the more similar are their functions [5].Semantic
+value of the ideal term can be estimated based on those
+of the known terms of interacting proteins and func-
+tional coefficient variation and descent direction of func-
+tional specificity between them.In the tables, #PPI is the number of interac-
+tions in the group; #SameDeg is the number of interac-
+tions in which the interacting proteins with the same
+degree in the group; #DiffDeg is the number of interac-
+tions in which the interacting proteins with different de-
+grees in the group; Pct(%) presents the percentage of
+interactions in the group.(6), P(x)
+is the set of predictive annotations; S is the target pro-
+tein set for testing; m is the number of proteins which at
+least have one predictive term.
+Two files including
+disease sets should be selected before submitting.PairSim calculates the similarity for a given pair of
+The Author(s) Journal of Biomedical Semantics 2017, 8(Suppl 1):28 Page 21 of 79
+disease sets, and BatchSim computes similarity between
+each pair of multiple disease sets.The
+file should be a plain text which contains several disease
+sets.Therefore, DisSetSim
+benefits researchers for exploring the function of
+disease-related molecular.Each of these disease sets could be
+inputted in a textbox.
+Personeni et al.Personeni et al.Personeni et al.Personeni et al.Consent for publication
+Not applicable
+Personeni et al.
+The traditional identification method is biological experiment, but it has the defects of long period,
+high cost, and missing the miRNAs that but also many other algorithms only exist in a specific period or low
+expression level.Availability of data and materials
+The dataset of pre-miRNAs was downloaded from http://bioinf.sce.carleton.ca/
+SMIRP
+About this supplement
+This article has been published as part of Journal of Biomedical Semantics
+Volume 8 Supplement 1, 2017: Selected articles from the Biological Ontologies
+and Knowledge bases workshop.LBH-Z15179, $800), and China
+Postdoctoral Science Foundation (Grant No.Tianyi
+Zhao, Ningyi Zhang and Ying Zhang are the co-first author.JR, PX, ZL, LC
+updated the algorithm.
+A convergence multi-agent Game
+In this subsection, we consider a 4-player, two-action
+game.14, the constrained dynamics of this
+special case can be modeled as follows:??Without loss of
+generality, we consider the case with two-action only.A non-convergence multiagent Game
+In this subsection, we consider a 4-player, two-action
+game.14 can not converge.
+|sim(gi, gj) > t} represents the edges
+between genes with values greater than threshold t.
+Construction of the phenotype-gene bilayer network
+We have got three networks, which are phenotype
+similarity network, IGSN and phenotype-gene association
+network respectively.We firstly construct five individual gene
+similarity networks based on genomic data of genes.Keywords: Gene Ontology, Gene similarity networks, Similarity network fusion, Disease gene identification
+Background
+Prioritization of candidate disease genes is a fundamental
+challenge in human health with applications to understand
+disease mechanisms, diagnosis and therapy [1–5].However, to the best of our knowledge, constructing and
+integrating multiple gene similarity networks for prioriti-
+zing disease genes has not been investigated well.Finally, we employee
+the random walk with restart algorithm on the phenotype-gene bilayer network, which combines phenotype similarity
+network, IGSN as well as phenotype-gene association network, to prioritize candidate disease genes.
+(2) The website that
+contributes most to symptoms in our KB is fh21.We map attributes
+to our ontology according to type information of entities
+and attribute values.a Semantic Type Distribution on Linked Concepts in UMLS, b Property Distribution on Linked
+Symptom in our KB, c Property Distribution on Linked Concepts in UMLS
+Abbreviations
+CRF: Conditional random field; EMR: Electronic medical record; KB: Knowledge
+base; POS: Part-of-speech; TCM: Traditional Chinese medicine; UMLS: Unified
+medical language system
+Acknowledgements
+We would like to thank three medical experts from Shanghai Shuguang
+Hospital for helping evaluate correctness of our data.6b and c. We define six attributes for symp-
+toms in our KB, and UMLS defines 13 attributes for
+the linked concepts.We eventually col-
+lect 62,013 entities from Baidu Baike, 59,704 entities
+from Hudong Baike, and 2220 entities from Chinese
+Wikipedia.
+In the associated disease identification experiment,
+when the ranking threshold is 10, the ratio of patients sat-
+isfying the threshold is 0.967 for original annotation set.However, it is
+difficult to make the right diagnosis purely based on
+sequencing technologies for many diseases with complex
+phenotypes and high genetic heterogeneity.The y-axis is the ratio of patients satisfying the ranking threshold
+In the causative gene identification experiment, when
+the ranking threshold is 10, the ratio of patients satisfy-
+ing the threshold is 0.951 for original annotation set.The y-axis is the ratio
+of patients satisfying the ranking threshold
+the threshold are 0.906 and 0.609 for IEA and TAS
+respectively.Using the unified
+description from HPO, the semantic similarity between
+The Author(s) Journal of Biomedical Semantics 2017, 8(Suppl 1):34 Page 63 of 79
+Fig.
+This dataset consisted
+of 29059 triples and was first converted to MediaWiki
+XML using the standalone rdf2smw tool, which was then
+imported using MediaWiki’s built-in XML import script.Tools 1-5 above were developed in the PHP program-
+ming language, as modules of a common MediaWiki
+extension called RDFIO.A standalone command-line tool for converting RDF
+triples into a MediaWiki XML file, for further import
+using MediaWiki’s built-in XML import function,
+named rdf2smw (referred to as rdf2smw below).Using
+CONSTRUCT to output RDF/XML basically amounts to a
+web based RDF export feature, which is why a separate
+RDF export web form was not deemed necessary.Note that
+such a functionality is distinct from the so called “vocabu-
+lary import” feature described earlier, which only enables
+manual linking of properties to ontology items, but no
+automatic import of data, and no support for import-
+ing plain RDF triples (OWL individuals), regardless of
+whether an ontology is used or not.
+10 Integration of the agent system into the hospital information system of the Jena University Hospital
+Fig.The lifetime of
+a continuant is presented by a time interval of non-zero
+duration; such time intervals are called chronoids in GFO
+[10].A
+point in time of the treatment is according to GFO a
+boundary of the treatment time (gfo:boundary_of),
+whereas the corresponding treatment situation is a
+boundary of the treatment itself.Journal of Biomedical Semantics  (2017) 8:36 Page 11 of 14
+with the model developed by Third is the formal repre-
+sentation of cross process risks that can lead to potential
+adverse situations during different treatment phases.Keywords: Perioperative risks, Ontology, Risk definition, Risk specification, Risk identification, Risk analysis, Agent system
+Background
+Patient safety is a quality objective and an important
+factor of the quality of treatment in hospitals in general
+[1].
+Our goal is to put forth a represen-
+tation scheme that will support secondary use of EHR
+data for conducting a large variety of retrospective studies.The Creative Commons Public Domain Dedication waiver
+(http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.2017 Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0
+International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and
+reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the
+Creative Commons license, and indicate if changes were made.Related work
+In this section, we focus on well-documented frameworks
+issued from medium-scale projects, or schemes that have
+been widely used in shared tasks or challenges.Journal of Biomedical Semantics  (2017) 8:37 Page 2 of 18
+(e.g.
+Conclusion
+In this paper, a tag graph kernel method used hashtag
+was proposed, which is combined with extension-
+path-tree-kernel-basedmethod and characteristic-kernel-
+basedmethod, a fused kernel learningmethod was further
+Table 4 Performance of different kernel methods in BioInfer
+corpus
+Method P R F
+Characteristics-based kernels 45.61 63.57 56.24
+Extension dependency path tree kernel 41.32 69.76 52.58
+Tag graph kernel 51.64 68.92 59.73
+Feature kernel + path tree kernel 49.86 70.12 60.25
+Feature kernel + tag graph kernel 55.43 71.62 61.30
+Path tree kernel + tag graph kernel 55.47 70.29 60.37
+The Author(s) Journal of Biomedical Semantics 2017, 8(Suppl 1):38 Page 7 of 79
+Table 5 Performance of different kernel methods in five types of corpuses
+Corpus set Evaluation parameters Characteristics- based kernels Extension path dependency kernel Tag graph kernel Kernels from
+three-kernel fusion
+Aimed P 45.34 42.31 50.82 57.45
+R 61.25 68.54 69.76 72.31
+F 55.36 52.63 58.61 60.98
+IEPA P 56.84 52.48 61.58 73.82
+R 72.92 69.35 76.91 81.06
+F 87.15 63.79 74.23 79.57
+BioInfer P 45.61 41.32 51.64 91.69
+R 63.57 69.76 68.92 71.62
+F 56.24 52.58 59.73 62.35
+HPRD P 50.26 49.96 55.64 61.87
+R 67.59 66.31 67.81 72.35
+F 75.38 69.78 70.01 85.48
+LLL P 53.59 83.34 71.92 75.69
+R 70.12 69.78 70.84 78.37
+F 68.43 88.03 77.43 90.12
+proposed.Keywords: Tag-graph kernel, Entity relationship extraction, Multi-kernels learing
+Background
+There are more than 20 million literature abstracts
+included in MEDLINE, which is the most authoritative
+textual database in the field of biomedicine.The biomed-
+ical literature is difficult to detect manually because of
+growing number of papers.Thus biomedical entity rela-
+tionship extraction is necessary to analysis biomedical
+literature.Biomedical entity relationship extraction is the
+extraction of inter-entity specific semantic relationships in
+text [1, 2].The P, R, and F
+value of tag graph kernel method in other four evaluation
+corpuses are 2-5% higher than that of all-paths graph ker-
+nel.i=0
+?iEi can fuse all
+paths with different lengths between different nodes into
+graph G. K is the set consisting of all hashtags, r?
+Methods
+AQ21 rule learning
+AQ21 is a multi-task ML and data mining system for
+attributional rule learning and rule testing that can be
+applied to a wide range of classification problems [17].Specifically, in the AQ21, hierarchical
+relationships are part of the definition of attributes’
+domains (set of possible values) that describe data.This is particularly valuable when
+analyzing coded medical data with potentially hundreds
+of thousands of binary attributes.Table 2
+shows the number of patients who reported ADL limita-
+tions before and after cancer diagnosis.Keywords: Machine learning, Bio-ontologies, Quality of life, Activities of daily living, SEER-MHOS
+Background
+Precision medicine is an emerging approach for dis-
+ease prevention and treatment that takes into account
+individualized patient information including genomics,
+environment, and lifestyle [1].
+Related work
+Kandoth et al.Our key
+objective is to understand the tumorigenesis of these four
+gynecological cancer types (OV, UCS, UCEC, & CESC).In our initial work [10] we pre-
+sented an approach to link and query three large repos-
+itories – TCGA2, COSMIC3, and Illumina Human Body
+Map 2.04 – to analyse the expression of specific genes in
+different tissues and its variants by:
+?Listing 5 SPARQL Query Federation: Genes, pathways, and
+biological processes
+The Listing 6 retrieves the methylated promotor
+regions.This study targets genes based on their contribution in
+mutations15, the listing 8 shows the highly relevant driver
+genes transforming healthy human tissues into diseased
+ones for respective cancer types.
+The Questionnaire resource
+provides the definition for forms within the study plan.These two parallel hier-
+archies ensure that the clinical study follows a prede-
+termined structure of subject, event, form, item
+group and item.[2] argue that to fulfil the goals of precision
+medicine requires the mining and aggregation of clinical
+data from multiple sources and entails novel approaches
+to obtaining contextual observations.The QuestionnaireResponse resource is linked back to the Questionnaire resource
+Leroux et al.Once completed, this should allow
+the integration of the FHIR data model with the semantic
+statistics vocabularies.
+In order to meet the above-mentioned requirements of
+RC, the authors developed PIBAS FedSPARQL,1 a plat-
+form based on Semantic Web technologies that allows
+end users to easily provide input data and run predefined
+Federated SPARQL queries across multiple data sources
+and detect similar data items, among data obtained from a
+query.This allows them to select certain
+properties of data sources to improve query results.Bio2RDF has transfigured and interrelated many biological
+databases, offering a platform for constructing queries
+across these data sources.By contrast, PIBAS FedSPARQL pre-
+serves intermediate results because it is very important
+for RC staff to gain all relevant data.Also, the novel “similar data items detection” algorithm can be particularly useful for
+suggesting new data sources and cost optimization for new experiments.
+Each of these articles is manually indexed
+by human experts with concepts of the MeSH (Medical
+Subject Headings) ontology (also curated by NLM), such
+as Neoplasms, Female and Newborn.Journal of Biomedical Semantics  (2017) 8:43 Page 2 of 13
+Fig.Such tools can help increase the productivity of
+human indexers by recommending them a ranked list of
+MeSH descriptors relevant to the article they are currently
+examining.This manual index-
+ing process entails significant costs in time and money.Both usages of such
+tools are currently adopted by NLM.
+Over the last dozen years, the biomedical research community has invested significant efforts in the development of
+biomedical semantic annotation technology.While
+the overview of application cases and state of the art
+tools can be of relevance to practitioners in the biome-
+dical domain, with the summary of potential areas for
+further research, we are also targeting researchers who
+are familiar with NLP, semantic technologies, and se-
+mantic annotation in general, but have not been dealing
+with the biomedical domain, as well as those who are
+well aware of biomedical semantic technologies, but
+have not been working on semantic annotation.and Bagheri Journal of Biomedical Semantics  (2017) 8:44 Page 2 of 18
+of the publicly available general purpose semantic an-
+notation tools for the biomedical domain, i.e., semantic
+annotators that are not specialized for a particular bio-
+medical entity type, but can detect and normalize en-
+tities of multiple types in one pass, and (iii) potential
+areas where the work in the biomedical semantic anno-
+tation domain can be strengthened or expanded.While a suite of biomedical semantic annotation tools
+is available for practical use, the biomedical community
+is yet to heavily engage in and leverage the benefits of
+such tools.The following section provides several examples of
+practical benefits achievable through semantic anno-
+tation of biomedical texts (see also Table 2).
+Lexical resources are also combined with
+probabilistic models, as has been tried in [24].To the best of our knowledge, our previous work [13]
+is the only research about the automatic simplification
+of DPLs.Results: In our evaluation, we used the corpus EasyDPL (Easy Drug Package Leaflets), a collection of 306 leaflets
+written in Spanish and manually annotated with 1400 adverse drug effects and their simplest synonyms.An ultimate goal of this work is to provide an automatic
+approach that helps these companies to write drug package leaflets in an easy-to-understand language.Lexical resources (such asWordNet [23]) are used
+Segura-Bedmar and Martínez Journal of Biomedical Semantics  (2017) 8:45 Page 3 of 9
+to propose synonyms as candidates in order to replace
+complex wordS.
+The right one shows the module for
+Esteban-Gil et al.Esteban-Gil et al.Esteban-Gil et al.In this work, our goal is to go beyond the
+Esteban-Gil et al.For example, Malignant neoplasm of rectum is clearly
+over-represented in the gender male, which permits to
+Esteban-Gil et al.
+CQ, SPARQL query and a figure with the result
+obtained are presented in the following examples:
+Fig.The term “ontology” has many definitions depending on
+the author and the way an ontology is built and used by
+computer systems.Instead, an ontology becomes an artefact to
+be used by other systems.Concepts are linked in one-
+way allowing to connect from a large to a small structure
+but not reverse.The experts team was com-
+prised by histology professors, with more than five years
+of teaching and research experience, and biomedical grad-
+uate students, with mayor on histology, all of them formed
+the research histology area.
+Burek et al.Burek et al.5
+Burek et al.Burek et al.Despite the shortcoming regarding validation in prac-
+tice, we argue that presenting and demonstrating our
+Burek et al.
+Conclusions: DTO was built based on the need for a formal semantic model for druggable targets including various
+related information such as protein, gene, protein domain, protein structure, binding site, small molecule drug,
+mechanism of action, protein tissue localization, disease association, and many other types of information.DTO has been implemented in the IDG user interface Portal, Pharos and the TIN-X explorer of protein
+target disease relationships.DTO integrates and harmonizes knowledge
+of the most important druggable protein families: kinases,
+GPCRs, ion channels and nuclear hormone receptors.However, to the best of our knowledge, a
+publically available structured knowledge resource of drug
+target classifications and relevant annotations for the most
+important protein families, one that facilitates querying, data
+integration, re-use, and analysis does not currently exist.DTO
+classifies the four major drug target protein families, GPCRs, kinases, ion channels and nuclear receptors, based on
+phylogenecity, function, target development level, disease association, tissue expression, chemical ligand and substrate
+characteristics, and target-family specific characteristics.
+Two major types of data
+access mechanisms are normally provided by RDB2RDF
+tools: i) data translation (a specific case of ETL - Extract,
+Transform, Load -), where data are materialized into RDF
+datasets and stored in a triple store (e.g., Virtuoso), which
+provides a SPARQL endpoint; and ii) query translation,
+where SPARQL queries are directly translated into SQL
+according to the specified RDB2RDF mappings, and eval-
+uated against the relational database, and where results
+are translated back using the mappings to conform with
+the SPARQL query.Background
+In this section we will review the main foundations
+of the work that we present in the paper, namely
+HL7 and the HL7 RIM, the R2RML language, and
+morph-RDB.In the
+“Background” section we discuss our current model
+for storing medical data, the HL7 RIM ontology, the
+R2RML mapping language, and our query translation
+engine morph-RDB.Journal of Biomedical Semantics  (2017) 8:49 
+DOI 10.1186/s13326-017-0155-8
+RESEARCH Open Access
+Querying clinical data in HL7 RIM based
+relational model with morph-RDB
+Freddy Priyatna1* , Raul Alonso-Calvo2, Sergio Paraiso-Medina2 and Oscar Corcho1
+Abstract
+Background: Semantic interoperability is essential when carrying out post-genomic clinical trials where several
+institutions collaborate, since researchers and developers need to have an integrated view and access to
+heterogeneous data sources.This is the reason why we were looking into using a
+Relational Database to RDF (RDB2RDF) solution.
+As future work, we will consider to tackle specific ter-
+minological categories where the classifiers fail to obtain
+good performance, like biological processes and molecu-
+lar functions.In the biomedical domain, plain rule-
+based approaches like [2] have become rare; however,
+© The Author(s).First we evaluated the performance of
+NER proper, i.e.This paper’s focus is the technique called Named Entity
+Recognition (herein NER), which solves the problem of
+detecting terms belonging to a limited set of predefined
+entity types.In particular, while the CRF
+precision scores are generally good, if not almost opti-
+mal for some categories, the results for chemicals and
+sequences are very bad in terms of recall, hindering the
+general performance of the system.
+Protocolsbiology, genetics, immunology, neurosciences, virology.Journal of Biomedical Semantics  (2017) 8:52 
+DOI 10.1186/s13326-017-0160-y
+RESEARCH Open Access
+Using semantics for representing
+experimental protocols
+Olga Giraldo1* , Alexander García1, Federico López2 and Oscar Corcho1
+Abstract
+Background: An experimental protocol is a sequence of tasks and operations executed to perform experimental
+research in biological and biomedical areas, e.g.
+(A) We first gathered up-to-date available bio-
+logical information about the biological process.We describe and
+apply below the approach (A) and (B) on a specific ex-
+ample (the formation of the 30S initiation complex) for
+illustrative purposes.As a proof of concept,
+we developed the Bacterial interlocked Process ONtol-
+ogy (BiPON) and showed that a) heterogeneous bio-
+logical processes can be described with the systemic
+representation and b) be linked automatically to math-
+ematical models, and that c) information about these
+processes can be enriched by automatic reasoning.37% of BiPON
+classes stem from different well-established bio-ontologies, while the others have been manually defined and
+curated.The Ontology
+of Genes and Genomes provides a list of genes from dif-
+ferent organisms including prokaryotes [17], while the Se-
+quence Ontology (SO) provides a detailed description of
+polymers and polymer sequence patterns [18].
+Journal of Biomedical Semantics  (2017) 8:54 Page 4 of 9
+Fig.Journal of Biomedical Semantics  (2017) 8:54 Page 5 of 9
+Fig.We
+considered briefly a “realist” perspective: modelled as a
+single entity, cell types are probably best represented as
+a metaclass, akin to a taxonomic species [27]; modelling
+as multiple entities (differentiating between the protocol
+and the cell type produced) would also be possible.the people
+responsible for the cell type) or AntigenLoad.Where these issues have arisen, either the
+ontology schema, patterns or the spreadsheet can bemod-
+ified accordingly.
+5)
+will weight the number of incorrect uniquemappings with
+respect to the total.Journal of Biomedical Semantics  (2017) 8:55 Page 9 of 13
+Table 7 Results against consensus alignments with vote=2 and vote=3 in the DOID-ORDO task
+System-mappings Mappings Precision-2 F-Measure-2 Recall-2 Precision-3 F-Measure-3 Recall-3
+BioPortal (baseline) 1018 0.99 0.71 0.55 0.99 0.76 0.62
+AML 2098 0.85 0.91 0.97 0.78 0.87 1.00
+DiSMatch 335 0.23 0.08 0.05 0.19 0.07 0.04
+FCA ?Table 2 Recall against BioPortal (baseline) mappings
+System AML DiSMatch FCA-Map LYAM++ LogMap LogMapBio LogMapLt PhenoMF PhenoMM PhenoMP XMap
+HP-MP 1.0 0.25 0.998 0.014 0.997 1.0 0.994 1.0 1.0 0.412 0.995
+DOID-ORDO 0.993 0.048 0.984 - 0.942 0.950 0.943 0.994 0.0 0.0 0.967
+Harrow et al.ManualAssessment
+(USi
+)
+17: end for
+The evaluation for the Disease and Phenotype track was
+semi-automatic with support of the SEALS infrastruc-
+ture.From
+the 13 systems registered to the track (out of 21 OAEI par-
+ticipants), 11 systems have been able to cope with at least
+one of the Disease and Phenotype matching tasks within
+a 24 h time frame.
+While the reference align-
+ment was still not available, the tools could be run through
+SEALS and the results for the tool would be directly avail-
+able.Our paper focuses on the whole period that the
+track was organized and deals with trends and overviews
+and multiple systems over the years rather than with
+individual systems.1 Ontology alignment framework (e.g., [95])
+Dragisic et al.According to this definition the recall+ of
+StringEquiv is equal to 03.Lily uses a maximum entropy approach to calculate a
+Dragisic et al.
+We used relationship identification output from the
+PPI-tailored rule-based tool as an added level of conser-
+vatism in the decision to add an unlabelled instance to
+the training set.Rather, we have experimented with various parameter set-
+tings to understand how the semi-supervisedmethodmay
+work.We are using themodified learnedmodel on the test
+set only to give precision and recall values to gauge the
+appropriateness of this technique.We achieve good results using a small training set.The results of testing Ibn Faiz’s rule-based and
+Table 3 Distribution of data in our different sets
+Data set Sentences Instances Positive
+instances
+Negative
+instances
+Training set 509 845 576 269
+Test set 244 823 536 287
+Unlabelled data 408 823 N/A N/A
+machine learning-based relationship identification tools
+[48] originally configured to find protein-protein inter-
+actions have been included in the table for comparison
+purposes.A genotype-phenotype pair is represented by
+a set of features derived from a sentence.
+Rodríguez-García et al.The MP is mainly used to characterize mouse
+phenotypes, but can also be applied to other organisms.We apply
+Resnik’s semantic similarity measure [24] together with
+the Best Matching Average strategy [25] to combine class
+similarities.For exam-
+ple, the phenotype class macroglossia (HP:0000158)
+describes an anatomical abnormality and is defined as
+equivalent to ‘has part’ some (‘increased
+size’ and (‘inheres in’ some tongue)and
+(‘has modifier’ some abnormal)), relying on
+the entity tongue (from the UBERON anatomy ontol-
+ogy [9]) and the quality increased size (from PATO)
+in its definition.Keywords: Phenotype, PhenomeNET, Disease gene prioritization, OWL, Automated reasoning
+Background
+Understanding the functions of genes and gene prod-
+ucts is vital for our understanding of normal biology and
+pathophysiology.
+For the PDMP research, we have begun but not com-
+pleted work on whether particular opiate and opioid-
+containing drug products are short vs. long acting
+formulations.Journal of Biomedical Semantics  (2017) 8:10 Page 9 of 11
+functions however, we can represent in DrOn the thera-
+peutic functions of drug products for which no mechan-
+ism of action at the molecular level is yet known.We originally created DrOn for use cases in comparative effectiveness
+research, primarily to identify historically complete sets of United States National Drug Codes (NDCs) that represent
+packaged drug products, by the ingredient(s), mechanism(s) of action, and so on contained in those products.We also did not represent the intended routes of ad-
+ministration of drug products, which prevented inclu-
+sion of an equivalent class axiom on all classes added in
+response to PRISM term requests.Journal of Biomedical Semantics  (2017) 8:10 
+DOI 10.1186/s13326-017-0121-5
+Background
+The Drug Ontology (DrOn) is a Web Ontology Language
+version 2 (OWL2) based representation of drug products
+and their ingredients, mechanisms of action, strengths,
+and dose forms, as well as packaged drug products as rep-
+resented by United States National Drug Codes (NDCs)
+[1–3].
+A 6,000 annotated tweets gold corpus with Kappa annotation agreement at 0.851
+was created and made public available.However, as we chose the hierarchical classification
+methods, we need to train three SVMs models inde-
+pendently.3 Sentiment distribution in 6,000 tweets gold standard.(F: F-1 score; P: pre-
+cision; R: recall; for the categories that do not indicate the
+metric, F-1 score are used)
+Classification
+Model
+Plain Classification (Baseline
+model)
+Hierarchical
+Classification
+Micro-
+averaging
+F 0.6732 0.7208
+Macro-
+averaging
+P 0.4455 0.5402
+R 0.3574 0.4386
+F 0.3967 0.4841
+Unrelated 0.8044 0.8599
+Neutral 0.5792 0.6181
+Positive 0.6528 0.7021
+NegSafety 0.7006 0.7277
+NegEfficacy 0 0.2593
+NegCost 0 0
+NegResistant 0 0
+NegOthers 0.155 0.4645
+Table 3 10-fold cross validation performance on different
+feature sets combinations.The number of tweets holding negative
+opinions on HPV vaccines exceeded the tweets holding
+positive opinions.
+Therefore
+these relations may be a poor fit to clinical drug ontology
+use cases.However, this fea-
+ture may facilitate clustering of drug-indication relationsand so explain WHO-ATC’s wide acceptance as a stand-
+ard for drug classification and discovery research.Keywords: Drug indications, Drug-disease relations, Drug ontologies, Drug information integration, UMLS, WHO-ATCBackground
+Biomedical information overload and the potential of
+formal ontologies to help overcome it are well recog-
+nized [1–3].Conclusions: The DID is a database of structured drug-indication relations intended to facilitate building practical,
+comprehensive, integrated drug ontologies.Drug-disease relations, specifically
+drug-indication relations, are a prime candidate for representation in ontologies.
+Journal of Biomedical Semantics  (2017) 8:8 Page 7 of 10
+Fig.Journal of Biomedical Semantics  (2017) 8:8 Page 9 of 10
+Fig.Full end-
+to-end processing of MEDLINE citations takes approxi-
+mately 30 - 45 seconds depending on citation length and
+complexity.It currently grows at the
+rate of about 760,000 citations per year and covers over
+5600 international biomedical journals in 36 languages.6 where we have high-
+lighted the descriptions of the experiment subjects in the
+Title, Abstract, and Full Text.
+For this pur-
+pose we developed an automated system which gathers
+Jovanovik and Trajanov Journal of Biomedical Semantics  (2017) 8:3 Page 3 of 24
+drug data from the official national drug registries of
+twenty-three different countries, executes data cleaning,
+aligns and transforms the data into 5-star Linked Data and
+publishes them on the Web in a common, aligned and
+consolidated Linked Data dataset.3Workflow: Transforming 2-star data from different national drug data registries to 5-star Linked Drug Data
+Jovanovik and Trajanov Journal of Biomedical Semantics  (2017) 8:3 Page 8 of 24
+OpenRefine instance with the RDF extension, that can
+be used as a REST-based service.To demonstrate the usability of
+the generated Linked Drug Data datasets, we provide
+example use-cases on the project website [60] and on
+GitHub [58].Storage
+II.Additionally, data dumps of the
+dataset are available on Datahub [55].
+Similarly, in our
+Kulmanov and Hoehndorf Journal of Biomedical Semantics  (2017) 8:7 Page 7 of 10
+Fig.Strategies for the latter
+include computing the mean of all pairwise similarities,
+computing the Best Match Average, and others [1].Kulmanov and Hoehndorf Journal of Biomedical Semantics  (2017) 8:7 Page 3 of 10
+Then we compute similarities between each pair of genes
+using simGIC measure [1] and Resnik’s similarity mea-
+sure [20] combined with Average and Best Match Average
+(BMA) strategies and generate similarity matrices.While the correlations are rela-
+tively small, there is nevertheless a bias that is confirmed
+by selecting a similarity measure that follows the same
+Kulmanov and Hoehndorf Journal of Biomedical Semantics  (2017) 8:7 Page 8 of 10
+Fig.A second group of similarity measures
+Kulmanov and Hoehndorf Journal of Biomedical Semantics  (2017) 8:7 Page 5 of 10
+Fig.
+It would be an asset for biomedical ontologies to be able to support such a probabilistic reasoning
+and formalize Bayesian indicators of performance: sensitivity, specificity, positive predictive value and negative
+predictive value.Thus, the prevalence value
+can be identified to the objective probability assigned
+to the disposition dPrevg,M .To solve this problem, we will formalize the real IP
+value as the probability assigned to a disposition borne by
+an instance of group of individuals; and estimates of IPs as
+data items which are about such a disposition.This group g1 will be formalized as a collection of
+humans (for more on collections, see [18]).Keywords: Sensitivity, Specificity, Medical test, Spectrum effect, Disposition, Realist ontology, Informational entity
+Background
+Definition of indicators of performance
+Biomedical ontologies aim at providing the most exhaust-
+ive and rigorous representation of reality as described by
+biomedical sciences.
+D do /* for each graph in
+the dataset */
+6 SD.addGraphName(u) ;
+7 for each p ?From the collection of raw data summaries S , we then
+compute some indexes that will be used to accelerate the
+source-selection process:
+1.“Methods”
+section presents the three main components of SAFE
+query planning.As can be seen from the results, the index sizes for
+all approaches are much smaller than the relative size
+of the raw data dump.Given that the indexes of
+HiBISCuS, SPLENDID and SAFE remain quite small rel-
+ative to total data sizes, they can easily be loaded into
+memory, where lookups can be performed in millisec-
+onds.
+As no morphological axis is available
+within the NCIt, we have adapted the NCIt by adding
+concepts corresponding to ICD-O-3morphologies, which
+we related to the corresponding diagnoses (based on the
+ICD-O-3 annotation of the NCIt).A total of 20133 (0.27%) expressions sub-
+suming at least one NCIt code were identified and the
+corresponding classes were introduced in the model as
+diagnoses.During the building pro-
+cess, a significant part of NCIt concepts was retrieved as
+subclasses of multiple diagnosis classes.The NCIt structure and the available relationships can help to bridge disease
+classifications taking into account their structural and granular heterogeneities.The NCIt structure and the available relationships
+can help to bridge disease classifications taking into
+account their structural and granular heterogeneity.
+While sufficient for evaluatingthe precision and reproducibility of the annotations, this
+skewed dataset would be insufficient for the evaluation
+of a diagnostic system.We restricted the 2795
+PubMed citations used for the text corpus to articles in
+English, indexed with the MeSH term “Ultrasonography”
+and for which the article was freely available.Journal of Biomedical Semantics  (2017) 8:4 Page 6 of 13?sign skos:hiddenLabel ?sign_id;
+rdfs:subClassOf* epo:OPPIO_0000189 .Dhombres et al.We have demonstrated the use of this
+Dhombres et al.
+(1) below
+describe the overall quality evaluation score based on the
+four scores.The
+syntactic score (2) describes the encoded readability of the
+ontology.Biomedical ontologies have influencedmedical research
+with the impact and efforts of the Gene Ontology [1],
+UMLS [2], SNOMED [3], etc.Focusing the attention on the modulated weighted
+scores for the drug ontologies, DIKB ended being the bet-
+ter quality drug ontology over RxNORM with an overall
+score of 0.75 than RxNORM’s 0.69.This
+paper introduces how to effectively utilize a semiotic-inspired approach to ontology evaluation, specifically towards
+drug-related ontologies hosted on the National Center for Biomedical Ontology BioPortal.
+The second implication is that we gained new insights
+on how the ISO 11179 standard could interact with the
+CIMI Reference Model for supporting detailed clinical
+modeling.A BCR data dictionary has been produced
+using the standard CDEs from NCI caDSR.Several Semantic Web-based representations of the
+ISO 11179 Part 3 meta-model have been created for pro-
+jects including the XMDR project [16], Semantic MDR
+in a European SALUS project [17] and CDISC2RDF in
+FDA PhUSE Semantic Technology project [18].The repository covers all 38
+clinical cancer study domains, comprising 316 distinct
+object classes, 4719 distinct properties, 1015 non-
+enumerated value domains and 1795 enumerated value
+domains (i.e., value sets).We created a JAVA program that pro-
+duces an OWL rendering of the CIMI Reference Model
+using the UML2OWL mappings specified by the Object
+Management Group (OMG) Ontology Definition meta-
+model (ODM) standard [22].
+They improved the results
+obtained by Hansen et al.Coulet et al.Hoehndorf et al.Garten et al.Recently,
+Funk et al.
+Elements of
+the Linked Data paradigm facilitate the systematic and scalable integration of relevant evidence sources.Evidence “linkouts” – the bridge between the summary
+and “drill down” use cases
+An important data element in the drug_hoi_evidence
+table is the evidence_linkout column.LAERTES provides open and
+scalable architecture for linking evidence sources relevant
+to investigating the association of drugs with HOIs.Data are aggregated from the evidence items
+and inserted into this table during the evidence load
+process using queries against the tables shown in Fig.Results: LAERTES provides a standardized, open, and scalable architecture for linking evidence sources relevant to
+the association of drugs with health outcomes of interest (HOIs).
+Using VO,
+INO, and normalized E. coli gene names, we applied an ontology-based SciMiner literature mining strategy to
+mine all PubMed abstracts and retrieve E. coli vaccine-associated E. coli gene interactions.Fourth, we further demonstrated that the
+centrality-based analysis enhanced our ability in identi-
+fying hub or critical genes or nodes in the E. coli gene-
+vaccine intearction network.Given so
+many E. coli strains and different E. coli usages, it has been
+a challenge in mining vaccine-related E. coli gene interac-
+tions from the large pool of literature reports.Conclusions: Vaccine-related E. coli gene-gene interaction network was constructed using ontology-based literature
+mining strategy, which identified important E. coli vaccine genes and their interactions with other genes through
+specific interaction types.These E. coli gene names, vaccine
+names, vaccine genes, and interaction keywords were
+then combinatorially used by SciMiner to process all
+PubMed abstracts to construct a vaccine-related E. coli
+Hur et al.
+A short list of the most frequent phenotypes is shown
+in Table 1 where the top two phenotypes in the corpus
+are “health risk” and “smoking”.As opposed to the previous biomedical relation extrac-
+tion corpora containing true and false types of relations, the
+annotated associations in the corpus were divided into
+three classes: positive, negative and neutral candidates.PKDE4J [5] and Dimex [6] are two methods for
+extracting mutation and disease association, the latter
+being a rule-based unsupervised mutation-disease asso-
+ciation extraction working on the abstract level.4 A sample of SNP and phenotype named entity recognition in the corpus
+Table 1 Some of the most occurred phenotypes in the corpus
+Phenotype/phenotypic trait Num.The reported f-score was measured for the detec-
+tion of positive SNP-phenotype association candidates.
+As mentioned before, MeSH Now was developed in
+2014 based on the learning-to-rank framework we first
+proposed in 2010 [3] for automatic MeSH indexing.Thus there are many outdated MeSH
+Fig.The rationale for Formula
+(1) is that if the (i + 1)th MeSH term was assigned with a
+score much smaller than the ith MeSH term, the MeSH
+terms ranked lower than i would not be considered rele-
+vant to the target article.Like many manual annotation projects [26–30],
+MeSH indexing is a labour-intensive process.Next,
+we apply a learning-to-rank algorithm to sort the candi-
+date MeSH terms based on the learned associations be-
+tween the document text and each candidate MeSH
+term.
+Schwarte et al.Saleem et al.Acosta et al.It
+makes use of the min-wise independent permutations
+[27] and compact data summaries to extend existing
+SPARQL query federation engines in order to achieve
+the same query recall values while querying fewer
+SAPRQL endpoints, which is a very specific optimi-
+sation solution for source selection.Given
+a SPARQL query, the first step is to parse the query and
+get the individual triple patterns (Step 1).
+Osumi-Sutherland et al.1 is specified by
+Osumi-Sutherland et al.Osumi-Sutherland et al.Osumi-Sutherland et al.Journal of Biomedical Semantics  (2017) 8:18 Page 4 of 7
+Fig.
+(XYZ)) is
+identified as a gene/disease name abbreviation candidate
+if it is in the uppercase form, has length <6 (the length
+was decided by manually analysing a random subset of
+the Uniprot and EFO dictionaries) and annotated by
+the system either as a disease or a gene name, whereas,
+the text located immediately before the parentheses is
+Kafkas et al.Although we reduce a very high level of ambiguity by
+applying the dictionary refinement process before text
+mining the documents, some target and disease name
+abbreviations could still be ambiguous with some other
+names.The evidence includes common disease genetic evidence
+based on GWAS study results from GWAS Catalog [2],
+rare Mendelian disease evidence based on ClinVar [3]
+clinical variant information from EVA and text mined
+target-disease associations from the Europe PMC
+(https://europepmc.org/) literature database [4] (see Table 3
+for a complete list of evidence types).The confidence score of a given document
+represents how valuable the document is in the scope of target validation for a given target-disease association by
+taking into account the credibility of the association based on the properties of the text.The data providers of the platform are asked to
+ground their target and disease entities in to these refer-
+ence resources so as to integrate the evidence in the
+platform.
+Two files including
+disease sets should be selected before submitting.PairSim calculates the similarity for a given pair of
+The Author(s) Journal of Biomedical Semantics 2017, 8(Suppl 1):28 Page 21 of 79
+disease sets, and BatchSim computes similarity between
+each pair of multiple disease sets.The
+file should be a plain text which contains several disease
+sets.Therefore, DisSetSim
+benefits researchers for exploring the function of
+disease-related molecular.Each of these disease sets could be
+inputted in a textbox.
+Girardi et al.ObTiMA, described by Stenzhorn et al.In a survey of semantic
+wikis featuring OWL reasoning and SPARQL3 querying
+facilities [10], a user evaluation of a chosen semantic
+Gonçalves et al.Bona et al.Gonçalves et al.
+The traditional identification method is biological experiment, but it has the defects of long period,
+high cost, and missing the miRNAs that but also many other algorithms only exist in a specific period or low
+expression level.Availability of data and materials
+The dataset of pre-miRNAs was downloaded from http://bioinf.sce.carleton.ca/
+SMIRP
+About this supplement
+This article has been published as part of Journal of Biomedical Semantics
+Volume 8 Supplement 1, 2017: Selected articles from the Biological Ontologies
+and Knowledge bases workshop.LBH-Z15179, $800), and China
+Postdoctoral Science Foundation (Grant No.Tianyi
+Zhao, Ningyi Zhang and Ying Zhang are the co-first author.JR, PX, ZL, LC
+updated the algorithm.
+In the table, #PPIt is
+the number of interactions in the network; #PPI is the
+number of interactions in the group; Pct(%) presents the
+percentage of interactions in the group.These methods
+are proposed on the principle of guilt-by-association
+(GBA), that is, the closer the two proteins are in the net-
+work the more similar are their functions [5].Semantic
+value of the ideal term can be estimated based on those
+of the known terms of interacting proteins and func-
+tional coefficient variation and descent direction of func-
+tional specificity between them.In the tables, #PPI is the number of interac-
+tions in the group; #SameDeg is the number of interac-
+tions in which the interacting proteins with the same
+degree in the group; #DiffDeg is the number of interac-
+tions in which the interacting proteins with different de-
+grees in the group; Pct(%) presents the percentage of
+interactions in the group.(6), P(x)
+is the set of predictive annotations; S is the target pro-
+tein set for testing; m is the number of proteins which at
+least have one predictive term.
+Thus the discovery of new disease terms could arise
+from future work based on such analyses.Once defined as a child, a disease
+does not have another chance to be promoted.We combined disease-gene associations
+from the two databases as in our previous work [1],
+using the MEDIC merged disease vocabulary (down-
+loaded from the Comparative Toxicogenomics Database
+[22] on February 3rd, 2016).The Unified Medical Language Sys-
+tem (UMLS) metathesaurus includes disease terms from
+multiple taxonomies; while it is not intended to be an
+ontology, its semantic network can identify some relation-
+ships between terms [12].To further advance such
+research and biomedical knowledge in the genomic era,
+a recent National Academy of Sciences working group
+has called for the development of new disease taxonomies
+better suited to incorporate molecular information [4].
+These GO terms usually describe some processes or pathways of particular interest, which are related
+to the experiment that is being performed.Gruca and Sikora Journal of Biomedical Semantics  (2017) 8:23 Page 3 of 14
+Related work
+So far, to find co-appearance of Gene Ontology terms,
+association rule induction algorithms were applied.Also, Gruca [23] applied FP-growth algorithm to
+find combinations of GO terms for functional description
+of genes.To help the expert during such analysis, a lot of tools
+have been invented and successfully applied during last
+years.Keywords: Functional description, Gene Ontology, Logical rules, Expert-driven rule induction
+Background
+Introdution
+Over 20 years ago, high-throughput technologies for the
+analysis of genomic data opened a new era in molecu-
+lar biology and genetics.
+Personeni et al.Personeni et al.Personeni et al.Personeni et al.Consent for publication
+Not applicable
+Personeni et al.
+Santana da Silva et al.DL queries can be answered based on satisfiability
+testing and class subsumption.the ontological content
+proper, whereas the ABox contains contingent “asser-
+tions" about individuals.tables, fields) related to each other?Entries from biomedical databases derive mostly from
+harvesting scientific literature or, otherwise, from the
+results of experiments.
+Trial integration In order to assess the feasibility of
+the above approach, we conducted a trial integration of
+some examples taken from the three-level ontology of
+abnormal states, the disease ontology, and some typical
+external resources, in which we used 386 abnormal
+states consisting of 279 abnormal states that are super
+classes of 107 states that are the bottom level classes
+appearing in 12 typical diseases from three medical spe-
+cializations, i.e., cardiovascular medicine, neurology, and
+gastroenterology.Keywords: Disease ontology, Definition of diseases, River flow model of disease, Linked data, Navigation system
+Background
+Recently, medical information resources that store consid-
+erable amount of data have become available.General disease chains
+are represented as an aggregation of the definitions of
+abnormal states.1554 diseases and 7080 abnormal states in six major clinical areas, which are
+extracted from the disease ontology, are published as linked data (RDF) with SPARQL endpoint (accessible API). 1554 diseases and 7080 abnormal states in six
+major clinical areas, which are extracted from the
+above RFM-diseases, are published as linked data
+(RDF) with SPARQL endpoint (accessible API).
+Ontology Recommender 1.0 sometimes suggests
+ontologies with high specialization scores but with
+very low input coverage, which makes the ontologies
+inappropriate for the user’s input.This is an expected result,
+given that the recommendation approach used by
+Ontology Recommender 1.0 is based on the relation
+between the number of annotations provided by each
+ontology and its size, which is our measure for
+ontology specialization.Suppose that a researcher needs to find the
+best ontologies for a list of biomedical terms.Ontology Recommender 2.0 recommends over 500 biomedical ontologies from the NCBO BioPortal
+platform, where it is openly available (both via the user interface at http://bioportal.bioontology.org/recommender,
+and via a Web service API).This approach
+has been implemented as release 2.0 of the NCBO
+Ontology Recommender, a system that is able to find
+the best ontologies for a biomedical text or set of
+keywords.
+10 Integration of the agent system into the hospital information system of the Jena University Hospital
+Fig.The lifetime of
+a continuant is presented by a time interval of non-zero
+duration; such time intervals are called chronoids in GFO
+[10].A
+point in time of the treatment is according to GFO a
+boundary of the treatment time (gfo:boundary_of),
+whereas the corresponding treatment situation is a
+boundary of the treatment itself.Journal of Biomedical Semantics  (2017) 8:36 Page 11 of 14
+with the model developed by Third is the formal repre-
+sentation of cross process risks that can lead to potential
+adverse situations during different treatment phases.Keywords: Perioperative risks, Ontology, Risk definition, Risk specification, Risk identification, Risk analysis, Agent system
+Background
+Patient safety is a quality objective and an important
+factor of the quality of treatment in hospitals in general
+[1].
+|sim(gi, gj) > t} represents the edges
+between genes with values greater than threshold t.
+Construction of the phenotype-gene bilayer network
+We have got three networks, which are phenotype
+similarity network, IGSN and phenotype-gene association
+network respectively.We firstly construct five individual gene
+similarity networks based on genomic data of genes.Keywords: Gene Ontology, Gene similarity networks, Similarity network fusion, Disease gene identification
+Background
+Prioritization of candidate disease genes is a fundamental
+challenge in human health with applications to understand
+disease mechanisms, diagnosis and therapy [1–5].However, to the best of our knowledge, constructing and
+integrating multiple gene similarity networks for prioriti-
+zing disease genes has not been investigated well.Finally, we employee
+the random walk with restart algorithm on the phenotype-gene bilayer network, which combines phenotype similarity
+network, IGSN as well as phenotype-gene association network, to prioritize candidate disease genes.
+Methods
+AQ21 rule learning
+AQ21 is a multi-task ML and data mining system for
+attributional rule learning and rule testing that can be
+applied to a wide range of classification problems [17].Specifically, in the AQ21, hierarchical
+relationships are part of the definition of attributes’
+domains (set of possible values) that describe data.This is particularly valuable when
+analyzing coded medical data with potentially hundreds
+of thousands of binary attributes.Table 2
+shows the number of patients who reported ADL limita-
+tions before and after cancer diagnosis.Keywords: Machine learning, Bio-ontologies, Quality of life, Activities of daily living, SEER-MHOS
+Background
+Precision medicine is an emerging approach for dis-
+ease prevention and treatment that takes into account
+individualized patient information including genomics,
+environment, and lifestyle [1].
+Our goal is to put forth a represen-
+tation scheme that will support secondary use of EHR
+data for conducting a large variety of retrospective studies.The Creative Commons Public Domain Dedication waiver
+(http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.2017 Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0
+International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and
+reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the
+Creative Commons license, and indicate if changes were made.Related work
+In this section, we focus on well-documented frameworks
+issued from medium-scale projects, or schemes that have
+been widely used in shared tasks or challenges.Journal of Biomedical Semantics  (2017) 8:37 Page 2 of 18
+(e.g.
+This dataset consisted
+of 29059 triples and was first converted to MediaWiki
+XML using the standalone rdf2smw tool, which was then
+imported using MediaWiki’s built-in XML import script.Tools 1-5 above were developed in the PHP program-
+ming language, as modules of a common MediaWiki
+extension called RDFIO.A standalone command-line tool for converting RDF
+triples into a MediaWiki XML file, for further import
+using MediaWiki’s built-in XML import function,
+named rdf2smw (referred to as rdf2smw below).Using
+CONSTRUCT to output RDF/XML basically amounts to a
+web based RDF export feature, which is why a separate
+RDF export web form was not deemed necessary.Note that
+such a functionality is distinct from the so called “vocabu-
+lary import” feature described earlier, which only enables
+manual linking of properties to ontology items, but no
+automatic import of data, and no support for import-
+ing plain RDF triples (OWL individuals), regardless of
+whether an ontology is used or not.
+(2) The website that
+contributes most to symptoms in our KB is fh21.We map attributes
+to our ontology according to type information of entities
+and attribute values.a Semantic Type Distribution on Linked Concepts in UMLS, b Property Distribution on Linked
+Symptom in our KB, c Property Distribution on Linked Concepts in UMLS
+Abbreviations
+CRF: Conditional random field; EMR: Electronic medical record; KB: Knowledge
+base; POS: Part-of-speech; TCM: Traditional Chinese medicine; UMLS: Unified
+medical language system
+Acknowledgements
+We would like to thank three medical experts from Shanghai Shuguang
+Hospital for helping evaluate correctness of our data.6b and c. We define six attributes for symp-
+toms in our KB, and UMLS defines 13 attributes for
+the linked concepts.We eventually col-
+lect 62,013 entities from Baidu Baike, 59,704 entities
+from Hudong Baike, and 2220 entities from Chinese
+Wikipedia.
+A convergence multi-agent Game
+In this subsection, we consider a 4-player, two-action
+game.14, the constrained dynamics of this
+special case can be modeled as follows:??Without loss of
+generality, we consider the case with two-action only.A non-convergence multiagent Game
+In this subsection, we consider a 4-player, two-action
+game.14 can not converge.
+Related work
+Kandoth et al.Our key
+objective is to understand the tumorigenesis of these four
+gynecological cancer types (OV, UCS, UCEC, & CESC).In our initial work [10] we pre-
+sented an approach to link and query three large repos-
+itories – TCGA2, COSMIC3, and Illumina Human Body
+Map 2.04 – to analyse the expression of specific genes in
+different tissues and its variants by:
+?Listing 5 SPARQL Query Federation: Genes, pathways, and
+biological processes
+The Listing 6 retrieves the methylated promotor
+regions.This study targets genes based on their contribution in
+mutations15, the listing 8 shows the highly relevant driver
+genes transforming healthy human tissues into diseased
+ones for respective cancer types.
+In the associated disease identification experiment,
+when the ranking threshold is 10, the ratio of patients sat-
+isfying the threshold is 0.967 for original annotation set.However, it is
+difficult to make the right diagnosis purely based on
+sequencing technologies for many diseases with complex
+phenotypes and high genetic heterogeneity.The y-axis is the ratio of patients satisfying the ranking threshold
+In the causative gene identification experiment, when
+the ranking threshold is 10, the ratio of patients satisfy-
+ing the threshold is 0.951 for original annotation set.The y-axis is the ratio
+of patients satisfying the ranking threshold
+the threshold are 0.906 and 0.609 for IEA and TAS
+respectively.Using the unified
+description from HPO, the semantic similarity between
+The Author(s) Journal of Biomedical Semantics 2017, 8(Suppl 1):34 Page 63 of 79
+Fig.
+Conclusion
+In this paper, a tag graph kernel method used hashtag
+was proposed, which is combined with extension-
+path-tree-kernel-basedmethod and characteristic-kernel-
+basedmethod, a fused kernel learningmethod was further
+Table 4 Performance of different kernel methods in BioInfer
+corpus
+Method P R F
+Characteristics-based kernels 45.61 63.57 56.24
+Extension dependency path tree kernel 41.32 69.76 52.58
+Tag graph kernel 51.64 68.92 59.73
+Feature kernel + path tree kernel 49.86 70.12 60.25
+Feature kernel + tag graph kernel 55.43 71.62 61.30
+Path tree kernel + tag graph kernel 55.47 70.29 60.37
+The Author(s) Journal of Biomedical Semantics 2017, 8(Suppl 1):38 Page 7 of 79
+Table 5 Performance of different kernel methods in five types of corpuses
+Corpus set Evaluation parameters Characteristics- based kernels Extension path dependency kernel Tag graph kernel Kernels from
+three-kernel fusion
+Aimed P 45.34 42.31 50.82 57.45
+R 61.25 68.54 69.76 72.31
+F 55.36 52.63 58.61 60.98
+IEPA P 56.84 52.48 61.58 73.82
+R 72.92 69.35 76.91 81.06
+F 87.15 63.79 74.23 79.57
+BioInfer P 45.61 41.32 51.64 91.69
+R 63.57 69.76 68.92 71.62
+F 56.24 52.58 59.73 62.35
+HPRD P 50.26 49.96 55.64 61.87
+R 67.59 66.31 67.81 72.35
+F 75.38 69.78 70.01 85.48
+LLL P 53.59 83.34 71.92 75.69
+R 70.12 69.78 70.84 78.37
+F 68.43 88.03 77.43 90.12
+proposed.Keywords: Tag-graph kernel, Entity relationship extraction, Multi-kernels learing
+Background
+There are more than 20 million literature abstracts
+included in MEDLINE, which is the most authoritative
+textual database in the field of biomedicine.The biomed-
+ical literature is difficult to detect manually because of
+growing number of papers.Thus biomedical entity rela-
+tionship extraction is necessary to analysis biomedical
+literature.Biomedical entity relationship extraction is the
+extraction of inter-entity specific semantic relationships in
+text [1, 2].The P, R, and F
+value of tag graph kernel method in other four evaluation
+corpuses are 2-5% higher than that of all-paths graph ker-
+nel.i=0
+?iEi can fuse all
+paths with different lengths between different nodes into
+graph G. K is the set consisting of all hashtags, r?
+The Questionnaire resource
+provides the definition for forms within the study plan.These two parallel hier-
+archies ensure that the clinical study follows a prede-
+termined structure of subject, event, form, item
+group and item.[2] argue that to fulfil the goals of precision
+medicine requires the mining and aggregation of clinical
+data from multiple sources and entails novel approaches
+to obtaining contextual observations.The QuestionnaireResponse resource is linked back to the Questionnaire resource
+Leroux et al.Once completed, this should allow
+the integration of the FHIR data model with the semantic
+statistics vocabularies.
+Over the last dozen years, the biomedical research community has invested significant efforts in the development of
+biomedical semantic annotation technology.While
+the overview of application cases and state of the art
+tools can be of relevance to practitioners in the biome-
+dical domain, with the summary of potential areas for
+further research, we are also targeting researchers who
+are familiar with NLP, semantic technologies, and se-
+mantic annotation in general, but have not been dealing
+with the biomedical domain, as well as those who are
+well aware of biomedical semantic technologies, but
+have not been working on semantic annotation.and Bagheri Journal of Biomedical Semantics  (2017) 8:44 Page 2 of 18
+of the publicly available general purpose semantic an-
+notation tools for the biomedical domain, i.e., semantic
+annotators that are not specialized for a particular bio-
+medical entity type, but can detect and normalize en-
+tities of multiple types in one pass, and (iii) potential
+areas where the work in the biomedical semantic anno-
+tation domain can be strengthened or expanded.While a suite of biomedical semantic annotation tools
+is available for practical use, the biomedical community
+is yet to heavily engage in and leverage the benefits of
+such tools.The following section provides several examples of
+practical benefits achievable through semantic anno-
+tation of biomedical texts (see also Table 2).
+Each of these articles is manually indexed
+by human experts with concepts of the MeSH (Medical
+Subject Headings) ontology (also curated by NLM), such
+as Neoplasms, Female and Newborn.Journal of Biomedical Semantics  (2017) 8:43 Page 2 of 13
+Fig.Such tools can help increase the productivity of
+human indexers by recommending them a ranked list of
+MeSH descriptors relevant to the article they are currently
+examining.This manual index-
+ing process entails significant costs in time and money.Both usages of such
+tools are currently adopted by NLM.
+Burek et al.Burek et al.5
+Burek et al.Burek et al.Despite the shortcoming regarding validation in prac-
+tice, we argue that presenting and demonstrating our
+Burek et al.
+Two major types of data
+access mechanisms are normally provided by RDB2RDF
+tools: i) data translation (a specific case of ETL - Extract,
+Transform, Load -), where data are materialized into RDF
+datasets and stored in a triple store (e.g., Virtuoso), which
+provides a SPARQL endpoint; and ii) query translation,
+where SPARQL queries are directly translated into SQL
+according to the specified RDB2RDF mappings, and eval-
+uated against the relational database, and where results
+are translated back using the mappings to conform with
+the SPARQL query.Background
+In this section we will review the main foundations
+of the work that we present in the paper, namely
+HL7 and the HL7 RIM, the R2RML language, and
+morph-RDB.In the
+“Background” section we discuss our current model
+for storing medical data, the HL7 RIM ontology, the
+R2RML mapping language, and our query translation
+engine morph-RDB.Journal of Biomedical Semantics  (2017) 8:49 
+DOI 10.1186/s13326-017-0155-8
+RESEARCH Open Access
+Querying clinical data in HL7 RIM based
+relational model with morph-RDB
+Freddy Priyatna1* , Raul Alonso-Calvo2, Sergio Paraiso-Medina2 and Oscar Corcho1
+Abstract
+Background: Semantic interoperability is essential when carrying out post-genomic clinical trials where several
+institutions collaborate, since researchers and developers need to have an integrated view and access to
+heterogeneous data sources.This is the reason why we were looking into using a
+Relational Database to RDF (RDB2RDF) solution.
+The right one shows the module for
+Esteban-Gil et al.Esteban-Gil et al.Esteban-Gil et al.In this work, our goal is to go beyond the
+Esteban-Gil et al.For example, Malignant neoplasm of rectum is clearly
+over-represented in the gender male, which permits to
+Esteban-Gil et al.
+CQ, SPARQL query and a figure with the result
+obtained are presented in the following examples:
+Fig.The term “ontology” has many definitions depending on
+the author and the way an ontology is built and used by
+computer systems.Instead, an ontology becomes an artefact to
+be used by other systems.Concepts are linked in one-
+way allowing to connect from a large to a small structure
+but not reverse.The experts team was com-
+prised by histology professors, with more than five years
+of teaching and research experience, and biomedical grad-
+uate students, with mayor on histology, all of them formed
+the research histology area.
+In order to meet the above-mentioned requirements of
+RC, the authors developed PIBAS FedSPARQL,1 a plat-
+form based on Semantic Web technologies that allows
+end users to easily provide input data and run predefined
+Federated SPARQL queries across multiple data sources
+and detect similar data items, among data obtained from a
+query.This allows them to select certain
+properties of data sources to improve query results.Bio2RDF has transfigured and interrelated many biological
+databases, offering a platform for constructing queries
+across these data sources.By contrast, PIBAS FedSPARQL pre-
+serves intermediate results because it is very important
+for RC staff to gain all relevant data.Also, the novel “similar data items detection” algorithm can be particularly useful for
+suggesting new data sources and cost optimization for new experiments.
+Lexical resources are also combined with
+probabilistic models, as has been tried in [24].To the best of our knowledge, our previous work [13]
+is the only research about the automatic simplification
+of DPLs.Results: In our evaluation, we used the corpus EasyDPL (Easy Drug Package Leaflets), a collection of 306 leaflets
+written in Spanish and manually annotated with 1400 adverse drug effects and their simplest synonyms.An ultimate goal of this work is to provide an automatic
+approach that helps these companies to write drug package leaflets in an easy-to-understand language.Lexical resources (such asWordNet [23]) are used
+Segura-Bedmar and Martínez Journal of Biomedical Semantics  (2017) 8:45 Page 3 of 9
+to propose synonyms as candidates in order to replace
+complex wordS.
+Conclusions: DTO was built based on the need for a formal semantic model for druggable targets including various
+related information such as protein, gene, protein domain, protein structure, binding site, small molecule drug,
+mechanism of action, protein tissue localization, disease association, and many other types of information.DTO has been implemented in the IDG user interface Portal, Pharos and the TIN-X explorer of protein
+target disease relationships.DTO integrates and harmonizes knowledge
+of the most important druggable protein families: kinases,
+GPCRs, ion channels and nuclear hormone receptors.However, to the best of our knowledge, a
+publically available structured knowledge resource of drug
+target classifications and relevant annotations for the most
+important protein families, one that facilitates querying, data
+integration, re-use, and analysis does not currently exist.DTO
+classifies the four major drug target protein families, GPCRs, kinases, ion channels and nuclear receptors, based on
+phylogenecity, function, target development level, disease association, tissue expression, chemical ligand and substrate
+characteristics, and target-family specific characteristics.
+(A) We first gathered up-to-date available bio-
+logical information about the biological process.We describe and
+apply below the approach (A) and (B) on a specific ex-
+ample (the formation of the 30S initiation complex) for
+illustrative purposes.As a proof of concept,
+we developed the Bacterial interlocked Process ONtol-
+ogy (BiPON) and showed that a) heterogeneous bio-
+logical processes can be described with the systemic
+representation and b) be linked automatically to math-
+ematical models, and that c) information about these
+processes can be enriched by automatic reasoning.37% of BiPON
+classes stem from different well-established bio-ontologies, while the others have been manually defined and
+curated.The Ontology
+of Genes and Genomes provides a list of genes from dif-
+ferent organisms including prokaryotes [17], while the Se-
+quence Ontology (SO) provides a detailed description of
+polymers and polymer sequence patterns [18].
+Journal of Biomedical Semantics  (2017) 8:54 Page 4 of 9
+Fig.Journal of Biomedical Semantics  (2017) 8:54 Page 5 of 9
+Fig.We
+considered briefly a “realist” perspective: modelled as a
+single entity, cell types are probably best represented as
+a metaclass, akin to a taxonomic species [27]; modelling
+as multiple entities (differentiating between the protocol
+and the cell type produced) would also be possible.the people
+responsible for the cell type) or AntigenLoad.Where these issues have arisen, either the
+ontology schema, patterns or the spreadsheet can bemod-
+ified accordingly.
+We used relationship identification output from the
+PPI-tailored rule-based tool as an added level of conser-
+vatism in the decision to add an unlabelled instance to
+the training set.Rather, we have experimented with various parameter set-
+tings to understand how the semi-supervisedmethodmay
+work.We are using themodified learnedmodel on the test
+set only to give precision and recall values to gauge the
+appropriateness of this technique.We achieve good results using a small training set.The results of testing Ibn Faiz’s rule-based and
+Table 3 Distribution of data in our different sets
+Data set Sentences Instances Positive
+instances
+Negative
+instances
+Training set 509 845 576 269
+Test set 244 823 536 287
+Unlabelled data 408 823 N/A N/A
+machine learning-based relationship identification tools
+[48] originally configured to find protein-protein inter-
+actions have been included in the table for comparison
+purposes.A genotype-phenotype pair is represented by
+a set of features derived from a sentence.
+Rodríguez-García et al.The MP is mainly used to characterize mouse
+phenotypes, but can also be applied to other organisms.We apply
+Resnik’s semantic similarity measure [24] together with
+the Best Matching Average strategy [25] to combine class
+similarities.For exam-
+ple, the phenotype class macroglossia (HP:0000158)
+describes an anatomical abnormality and is defined as
+equivalent to ‘has part’ some (‘increased
+size’ and (‘inheres in’ some tongue)and
+(‘has modifier’ some abnormal)), relying on
+the entity tongue (from the UBERON anatomy ontol-
+ogy [9]) and the quality increased size (from PATO)
+in its definition.Keywords: Phenotype, PhenomeNET, Disease gene prioritization, OWL, Automated reasoning
+Background
+Understanding the functions of genes and gene prod-
+ucts is vital for our understanding of normal biology and
+pathophysiology.
+Protocolsbiology, genetics, immunology, neurosciences, virology.Journal of Biomedical Semantics  (2017) 8:52 
+DOI 10.1186/s13326-017-0160-y
+RESEARCH Open Access
+Using semantics for representing
+experimental protocols
+Olga Giraldo1* , Alexander García1, Federico López2 and Oscar Corcho1
+Abstract
+Background: An experimental protocol is a sequence of tasks and operations executed to perform experimental
+research in biological and biomedical areas, e.g.
+5)
+will weight the number of incorrect uniquemappings with
+respect to the total.Journal of Biomedical Semantics  (2017) 8:55 Page 9 of 13
+Table 7 Results against consensus alignments with vote=2 and vote=3 in the DOID-ORDO task
+System-mappings Mappings Precision-2 F-Measure-2 Recall-2 Precision-3 F-Measure-3 Recall-3
+BioPortal (baseline) 1018 0.99 0.71 0.55 0.99 0.76 0.62
+AML 2098 0.85 0.91 0.97 0.78 0.87 1.00
+DiSMatch 335 0.23 0.08 0.05 0.19 0.07 0.04
+FCA ?Table 2 Recall against BioPortal (baseline) mappings
+System AML DiSMatch FCA-Map LYAM++ LogMap LogMapBio LogMapLt PhenoMF PhenoMM PhenoMP XMap
+HP-MP 1.0 0.25 0.998 0.014 0.997 1.0 0.994 1.0 1.0 0.412 0.995
+DOID-ORDO 0.993 0.048 0.984 - 0.942 0.950 0.943 0.994 0.0 0.0 0.967
+Harrow et al.ManualAssessment
+(USi
+)
+17: end for
+The evaluation for the Disease and Phenotype track was
+semi-automatic with support of the SEALS infrastruc-
+ture.From
+the 13 systems registered to the track (out of 21 OAEI par-
+ticipants), 11 systems have been able to cope with at least
+one of the Disease and Phenotype matching tasks within
+a 24 h time frame.
+While the reference align-
+ment was still not available, the tools could be run through
+SEALS and the results for the tool would be directly avail-
+able.Our paper focuses on the whole period that the
+track was organized and deals with trends and overviews
+and multiple systems over the years rather than with
+individual systems.1 Ontology alignment framework (e.g., [95])
+Dragisic et al.According to this definition the recall+ of
+StringEquiv is equal to 03.Lily uses a maximum entropy approach to calculate a
+Dragisic et al.
+As future work, we will consider to tackle specific ter-
+minological categories where the classifiers fail to obtain
+good performance, like biological processes and molecu-
+lar functions.In the biomedical domain, plain rule-
+based approaches like [2] have become rare; however,
+© The Author(s).First we evaluated the performance of
+NER proper, i.e.This paper’s focus is the technique called Named Entity
+Recognition (herein NER), which solves the problem of
+detecting terms belonging to a limited set of predefined
+entity types.In particular, while the CRF
+precision scores are generally good, if not almost opti-
+mal for some categories, the results for chemicals and
+sequences are very bad in terms of recall, hindering the
+general performance of the system.
